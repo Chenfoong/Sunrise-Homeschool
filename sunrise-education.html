@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunrise Education | 阳光学府 | Pendidikan Sunrise – Homeschooling Malaysia</title>
+<meta name="description" content="Sunrise Education – Premier IGCSE homeschooling centre in Klang, Selangor. Personalised Cambridge curriculum for ages 7–18. Enrol now!">
+<meta name="keywords" content="homeschooling Malaysia, IGCSE Klang, homeschool Selangor, Cambridge curriculum Malaysia, 马来西亚居家学习, sekolah rumah Klang, 阳光学府">
+<meta property="og:title" content="Sunrise Education 阳光学府 – Where Every Child Shines">
+<meta property="og:description" content="IGCSE Cambridge homeschooling for ages 7–18 in Klang, Malaysia. Established 2014.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.sun.edu.my">
+<link rel="canonical" href="https://www.sun.edu.my">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sun:#E8820C;--sun-lt:#FFB347;--sun-pale:#FFF3E0;--sun-xpale:#FFFBF5;
+  --navy:#1B3A6B;--navy-lt:#2D5DA1;--navy-pale:#EEF4FF;
+  --gold:#F5C518;--gold-lt:#FDE68A;
+  --green:#2D9B6F;--green-pale:#E8F7F1;
+  --cream:#FFFBF5;--white:#FFFFFF;
+  --text:#1A1A2E;--text-md:#4A4A6A;--text-lt:#8A8AA8;
+  --border:rgba(27,58,107,0.1);--border-sun:rgba(232,130,12,0.25);
+  --r:16px;--r-sm:8px;--r-xs:6px;
+  --sh:0 4px 24px rgba(232,130,12,0.12);
+  --sh-lg:0 12px 48px rgba(27,58,107,0.15);
+  --sh-navy:0 4px 24px rgba(27,58,107,0.2);
+  --tr:all 0.3s cubic-bezier(.4,0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Plus Jakarta Sans','Noto Sans SC',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;font-size:16px;line-height:1.7;}
+h1,h2,h3,h4{font-family:'Playfair Display','Noto Sans SC',serif;line-height:1.25;}
+.zh h1,.zh h2,.zh h3,.zh h4{font-family:'Noto Sans SC','Playfair Display',serif;}
+.ms h1,.ms h2,.ms h3,.ms h4{font-family:'Plus Jakarta Sans',sans-serif;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+button{cursor:pointer;border:none;background:none;font-family:inherit;}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,251,245,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:var(--tr);}
+#nav.scrolled{box-shadow:var(--sh);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:70px;display:flex;align-items:center;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto;}
+.nav-logo-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--sun-lt),var(--sun));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 12px rgba(232,130,12,0.3);}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1.1;}
+.nav-logo-en{font-family:'Playfair Display',serif;font-weight:700;font-size:18px;color:var(--navy);}
+.nav-logo-zh{font-size:11px;color:var(--sun);font-weight:600;letter-spacing:2px;}
+.nav-links{display:flex;gap:4px;align-items:center;}
+.nav-link{padding:8px 14px;border-radius:var(--r-xs);font-size:14px;font-weight:500;color:var(--text-md);transition:var(--tr);cursor:pointer;}
+.nav-link:hover,.nav-link.active{color:var(--sun);background:var(--sun-pale);}
+.nav-actions{display:flex;align-items:center;gap:8px;margin-left:8px;}
+.lang-btn{padding:6px 10px;border-radius:var(--r-xs);font-size:12px;font-weight:600;color:var(--text-lt);transition:var(--tr);cursor:pointer;}
+.lang-btn.active{background:var(--navy);color:var(--white);}
+.lang-btn:hover:not(.active){background:var(--navy-pale);color:var(--navy);}
+.nav-cta{background:var(--sun);color:var(--white);padding:9px 18px;border-radius:var(--r-sm);font-size:13px;font-weight:600;transition:var(--tr);}
+.nav-cta:hover{background:var(--navy);transform:translateY(-1px);box-shadow:var(--sh-navy);}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;}
+.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:2px;transition:var(--tr);}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:16px;z-index:999;box-shadow:var(--sh-lg);}
+.mobile-menu.open{display:flex;flex-direction:column;gap:4px;}
+.mobile-link{padding:12px 16px;border-radius:var(--r-xs);font-size:15px;font-weight:500;color:var(--text-md);cursor:pointer;transition:var(--tr);}
+.mobile-link:hover,.mobile-link.active{color:var(--sun);background:var(--sun-pale);}
+.mobile-langs{display:flex;gap:8px;padding:12px 16px;margin-top:8px;border-top:1px solid var(--border);}
+
+/* PAGES */
+.page{display:none;min-height:100vh;padding-top:70px;animation:fadeIn 0.4s ease;}
+.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+
+/* HERO */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#1B3A6B 0%,#0F2447 40%,#1a2d5a 100%);}
+.hero-bg-circles{position:absolute;inset:0;overflow:hidden;}
+.hero-circle{position:absolute;border-radius:50%;opacity:0.08;}
+.hc1{width:600px;height:600px;background:var(--sun);top:-200px;right:-100px;animation:pulse 6s ease-in-out infinite;}
+.hc2{width:400px;height:400px;background:var(--gold);bottom:-150px;left:-100px;animation:pulse 8s ease-in-out infinite 2s;}
+.hc3{width:300px;height:300px;background:var(--sun-lt);top:50%;right:200px;animation:pulse 7s ease-in-out infinite 1s;}
+@keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.1);}}
+.hero-rays{position:absolute;top:0;right:0;width:60%;height:100%;background:radial-gradient(ellipse at 80% 50%,rgba(232,130,12,0.15) 0%,transparent 70%);pointer-events:none;}
+.hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,197,24,0.15);border:1px solid rgba(245,197,24,0.4);color:var(--gold);padding:6px 16px;border-radius:100px;font-size:13px;font-weight:600;margin-bottom:24px;letter-spacing:0.5px;}
+.hero-title{font-size:clamp(36px,5vw,60px);color:var(--white);margin-bottom:20px;line-height:1.15;}
+.hero-title span{color:var(--sun-lt);}
+.hero-sub{font-size:18px;color:rgba(255,255,255,0.75);margin-bottom:32px;line-height:1.7;font-weight:300;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-primary{background:var(--sun);color:var(--white);padding:14px 28px;border-radius:var(--r-sm);font-size:15px;font-weight:600;transition:var(--tr);cursor:pointer;display:inline-flex;align-items:center;gap:8px;}
+.btn-primary:hover{background:var(--sun-lt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,130,12,0.4);}
+.btn-outline{background:transparent;color:var(--white);padding:14px 28px;border-radius:var(--r-sm);font-size:15px;font-weight:600;transition:var(--tr);cursor:pointer;border:1.5px solid rgba(255,255,255,0.35);}
+.btn-outline:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.6);}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;}
+.hero-stat{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:var(--r);padding:20px;text-align:center;backdrop-filter:blur(8px);}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--gold);}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,0.6);margin-top:4px;font-weight:500;}
+.hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:24px;padding:32px;backdrop-filter:blur(16px);}
+.hero-card-title{font-size:22px;font-family:'Playfair Display',serif;color:var(--white);margin-bottom:20px;}
+.hero-feature{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.hero-feature:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.hero-feat-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.hfi-sun{background:rgba(232,130,12,0.25);}
+.hfi-navy{background:rgba(255,255,255,0.1);}
+.hfi-gold{background:rgba(245,197,24,0.2);}
+.hero-feat-text{font-size:14px;color:rgba(255,255,255,0.8);font-weight:400;}
+.hero-feat-title{color:var(--white);font-weight:600;font-size:14px;margin-bottom:2px;}
+
+/* SECTIONS */
+.section{padding:80px 24px;}
+.section-alt{background:var(--white);}
+.container{max-width:1200px;margin:0 auto;}
+.section-tag{display:inline-block;background:var(--sun-pale);color:var(--sun);padding:5px 14px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;}
+.section-title{font-size:clamp(28px,4vw,44px);color:var(--navy);margin-bottom:16px;}
+.section-sub{font-size:17px;color:var(--text-md);max-width:600px;line-height:1.7;}
+.section-header{margin-bottom:56px;}
+.section-header.center{text-align:center;}
+.section-header.center .section-sub{margin:0 auto;}
+
+/* CARDS */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+.card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:28px;transition:var(--tr);}
+.card:hover{border-color:var(--border-sun);box-shadow:var(--sh);transform:translateY(-4px);}
+.card-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:20px;}
+.ci-sun{background:var(--sun-pale);}
+.ci-navy{background:var(--navy-pale);}
+.ci-gold{background:linear-gradient(135deg,#FDE68A,#FEF3C7);}
+.ci-green{background:var(--green-pale);}
+.card-title{font-size:19px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.card-text{font-size:15px;color:var(--text-md);line-height:1.7;}
+
+/* MISSION STRIP */
+.mission-strip{background:linear-gradient(135deg,var(--navy),var(--navy-lt));padding:64px 24px;}
+.mission-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;max-width:1200px;margin:0 auto;}
+.mission-item{text-align:center;padding:32px 20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;transition:var(--tr);}
+.mission-item:hover{background:rgba(255,255,255,0.1);}
+.mission-icon{font-size:40px;margin-bottom:16px;}
+.mission-title{color:var(--gold);font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;}
+.mission-text{color:rgba(255,255,255,0.7);font-size:14px;line-height:1.7;}
+
+/* CURRICULUM */
+.curriculum-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.curriculum-img{background:linear-gradient(135deg,var(--navy-pale),var(--sun-pale));border-radius:24px;padding:40px;min-height:360px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.curriculum-visual{font-size:80px;text-align:center;}
+.curriculum-badges{position:absolute;top:24px;right:24px;display:flex;flex-direction:column;gap:8px;}
+.cbadge{background:var(--white);border:1px solid var(--border);border-radius:100px;padding:6px 12px;font-size:11px;font-weight:700;color:var(--navy);box-shadow:var(--sh);}
+.curriculum-features{display:flex;flex-direction:column;gap:16px;}
+.cf-item{display:flex;align-items:flex-start;gap:16px;padding:18px;background:var(--white);border:1px solid var(--border);border-radius:14px;transition:var(--tr);}
+.cf-item:hover{border-color:var(--border-sun);box-shadow:var(--sh);}
+.cf-check{width:28px;height:28px;background:var(--sun);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:14px;flex-shrink:0;margin-top:2px;}
+.cf-title{font-weight:600;color:var(--navy);font-size:15px;margin-bottom:4px;}
+.cf-text{font-size:13px;color:var(--text-md);}
+
+/* AGE TABS */
+.age-tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap;}
+.age-tab{padding:10px 20px;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;transition:var(--tr);border:1.5px solid var(--border);}
+.age-tab.active{background:var(--navy);color:var(--white);border-color:var(--navy);}
+.age-tab:hover:not(.active){border-color:var(--sun);color:var(--sun);}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+
+/* SYLLABUS TABLE */
+.syllabus-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+.subj-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:20px;transition:var(--tr);}
+.subj-card:hover{border-color:var(--border-sun);transform:translateY(-2px);}
+.subj-icon{font-size:28px;margin-bottom:10px;}
+.subj-name{font-size:14px;font-weight:600;color:var(--navy);}
+.subj-code{font-size:11px;color:var(--text-lt);margin-top:4px;}
+
+/* CALENDAR */
+.calendar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.cal-card{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:var(--tr);}
+.cal-card:hover{box-shadow:var(--sh);transform:translateY(-2px);}
+.cal-header{background:var(--navy);color:var(--white);padding:14px 20px;font-weight:600;font-size:15px;}
+.cal-body{padding:16px 20px;}
+.cal-event{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.cal-event:last-child{border-bottom:none;}
+.cal-dot{width:8px;height:8px;border-radius:50%;background:var(--sun);margin-top:6px;flex-shrink:0;}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:12px;}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:var(--tr);}
+.faq-q{padding:20px 24px;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--navy);}
+.faq-q:hover{background:var(--sun-pale);}
+.faq-arrow{font-size:18px;transition:var(--tr);}
+.faq-item.open .faq-arrow{transform:rotate(180deg);color:var(--sun);}
+.faq-a{padding:0 24px 20px;font-size:14px;color:var(--text-md);line-height:1.8;display:none;}
+.faq-item.open .faq-a{display:block;}
+.faq-item.open{border-color:var(--border-sun);}
+
+/* ADMISSIONS */
+.steps-track{display:flex;gap:0;margin-bottom:56px;position:relative;flex-wrap:wrap;}
+.steps-track::before{content:'';position:absolute;top:28px;left:0;right:0;height:2px;background:linear-gradient(to right,var(--sun),var(--navy));opacity:0.2;z-index:0;}
+.step-item{flex:1;min-width:160px;text-align:center;position:relative;z-index:1;padding:0 12px;}
+.step-num{width:56px;height:56px;background:var(--white);border:2px solid var(--border);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:var(--text-lt);transition:var(--tr);}
+.step-item.done .step-num{background:var(--sun);border-color:var(--sun);color:var(--white);}
+.step-label{font-size:13px;font-weight:600;color:var(--text-md);}
+.step-item.done .step-label{color:var(--navy);}
+
+/* TUITION */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.price-card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:32px;text-align:center;transition:var(--tr);}
+.price-card.featured{border-color:var(--sun);border-width:2px;position:relative;background:linear-gradient(to bottom,var(--sun-pale),var(--white));}
+.price-card:hover{transform:translateY(-4px);box-shadow:var(--sh);}
+.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--sun);color:var(--white);padding:4px 16px;border-radius:100px;font-size:12px;font-weight:700;white-space:nowrap;}
+.price-level{font-size:14px;font-weight:700;color:var(--text-lt);letter-spacing:1px;text-transform:uppercase;margin-bottom:12px;}
+.price-amt{font-family:'Playfair Display',serif;font-size:42px;color:var(--navy);margin-bottom:4px;}
+.price-per{font-size:13px;color:var(--text-lt);}
+.price-features{margin:24px 0;text-align:left;display:flex;flex-direction:column;gap:10px;}
+.pf{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-md);}
+.pf::before{content:'✓';color:var(--sun);font-weight:700;font-size:14px;}
+
+/* VISION */
+.vision-hero{background:linear-gradient(135deg,#0F2447,var(--navy));padding:100px 24px;text-align:center;}
+.vision-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
+.vision-card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:28px;transition:var(--tr);}
+.vision-card:hover{border-color:var(--border-sun);transform:translateY(-4px);box-shadow:var(--sh);}
+.vision-num{font-family:'Playfair Display',serif;font-size:48px;color:var(--sun-pale);font-weight:700;line-height:1;}
+.vision-title{font-size:20px;color:var(--navy);margin-bottom:10px;margin-top:-8px;}
+
+/* ABOUT */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;}
+.team-card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:28px;text-align:center;transition:var(--tr);}
+.team-card:hover{transform:translateY(-4px);box-shadow:var(--sh);}
+.team-avatar{width:72px;height:72px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;color:var(--white);}
+.ta-sun{background:linear-gradient(135deg,var(--sun-lt),var(--sun));}
+.ta-navy{background:linear-gradient(135deg,var(--navy-lt),var(--navy));}
+.ta-gold{background:linear-gradient(135deg,var(--gold),#E6A800);}
+.team-name{font-size:16px;font-weight:700;color:var(--navy);}
+.team-role{font-size:13px;color:var(--text-lt);margin-top:4px;}
+
+/* MAP & CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+.contact-info{display:flex;flex-direction:column;gap:20px;}
+.contact-item{display:flex;gap:16px;align-items:flex-start;}
+.contact-icon{width:44px;height:44px;background:var(--sun-pale);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.contact-label{font-size:12px;font-weight:700;color:var(--text-lt);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.contact-val{font-size:15px;color:var(--navy);font-weight:500;}
+.contact-val a{color:var(--sun);}
+.map-wrap{border-radius:20px;overflow:hidden;border:1px solid var(--border);box-shadow:var(--sh);}
+.map-wrap iframe{width:100%;height:350px;border:none;}
+
+/* GALLERY STRIP */
+.activity-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;}
+.activity-item{border-radius:16px;padding:24px 16px;text-align:center;transition:var(--tr);cursor:default;}
+.activity-item:hover{transform:translateY(-4px);}
+.ai-icon{font-size:36px;margin-bottom:12px;}
+.ai-label{font-size:13px;font-weight:600;color:var(--navy);}
+.ai-sub{font-size:11px;color:var(--text-lt);margin-top:4px;}
+
+/* TESTIMONIALS */
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+.testi{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:28px;transition:var(--tr);}
+.testi:hover{box-shadow:var(--sh);transform:translateY(-2px);}
+.testi-stars{color:var(--gold);font-size:18px;margin-bottom:16px;}
+.testi-text{font-size:15px;color:var(--text-md);line-height:1.7;font-style:italic;margin-bottom:20px;}
+.testi-author{display:flex;align-items:center;gap:12px;}
+.testi-avatar{width:40px;height:40px;border-radius:50%;background:var(--sun-pale);display:flex;align-items:center;justify-content:center;font-size:18px;}
+.testi-name{font-size:14px;font-weight:700;color:var(--navy);}
+.testi-role{font-size:12px;color:var(--text-lt);}
+
+/* CTA BANNER */
+.cta-banner{background:linear-gradient(135deg,var(--sun),#C56800);padding:80px 24px;text-align:center;}
+.cta-banner h2{color:var(--white);font-size:clamp(28px,4vw,42px);margin-bottom:16px;}
+.cta-banner p{color:rgba(255,255,255,0.85);font-size:17px;margin-bottom:32px;}
+.btn-white{background:var(--white);color:var(--sun);padding:14px 32px;border-radius:var(--r-sm);font-size:15px;font-weight:700;cursor:pointer;transition:var(--tr);}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.15);}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.75);padding:60px 24px 24px;}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+.footer-brand p{font-size:14px;line-height:1.8;margin-top:16px;color:rgba(255,255,255,0.6);}
+.footer-col h4{color:var(--gold);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;}
+.footer-links{display:flex;flex-direction:column;gap:8px;}
+.footer-links a,.footer-links span{font-size:14px;color:rgba(255,255,255,0.6);cursor:pointer;transition:var(--tr);}
+.footer-links a:hover,.footer-links span:hover{color:var(--sun-lt);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:gap;}
+.footer-copy{font-size:13px;color:rgba(255,255,255,0.4);}
+.social-links{display:flex;gap:12px;}
+.social-btn{width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;transition:var(--tr);cursor:pointer;}
+.social-btn:hover{background:var(--sun);}
+
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;bottom:88px;right:24px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+.wa-btn{width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.4);cursor:pointer;transition:var(--tr);font-size:26px;}
+.wa-btn:hover{transform:scale(1.1);}
+.wa-tooltip{position:absolute;right:64px;background:var(--text);color:var(--white);padding:6px 12px;border-radius:var(--r-xs);font-size:13px;white-space:nowrap;opacity:0;transition:var(--tr);pointer-events:none;}
+.wa-float:hover .wa-tooltip{opacity:1;}
+
+/* AI CHAT */
+.chat-toggle{position:fixed;bottom:24px;right:24px;z-index:900;}
+.chat-icon-btn{width:56px;height:56px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-navy);cursor:pointer;transition:var(--tr);font-size:26px;}
+.chat-icon-btn:hover{background:var(--sun);transform:scale(1.05);}
+.chat-box{position:fixed;bottom:90px;right:24px;width:360px;max-height:520px;background:var(--white);border-radius:20px;box-shadow:var(--sh-lg);border:1px solid var(--border);display:none;flex-direction:column;z-index:900;overflow:hidden;}
+.chat-box.open{display:flex;animation:fadeIn 0.3s ease;}
+.chat-header{background:linear-gradient(135deg,var(--navy),var(--navy-lt));padding:18px 20px;display:flex;align-items:center;gap:12px;}
+.chat-avatar{width:38px;height:38px;background:var(--sun);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;}
+.chat-title{color:var(--white);font-size:15px;font-weight:600;}
+.chat-status{font-size:11px;color:rgba(255,255,255,0.6);margin-top:2px;}
+.chat-close{margin-left:auto;color:rgba(255,255,255,0.6);cursor:pointer;font-size:20px;padding:4px;}
+.chat-messages{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px;min-height:200px;}
+.msg{max-width:82%;padding:10px 14px;border-radius:14px;font-size:14px;line-height:1.6;}
+.msg-bot{background:var(--navy-pale);color:var(--text);align-self:flex-start;border-radius:4px 14px 14px 14px;}
+.msg-user{background:var(--sun);color:var(--white);align-self:flex-end;border-radius:14px 4px 14px 14px;}
+.chat-typing{align-self:flex-start;font-size:13px;color:var(--text-lt);font-style:italic;padding:4px 8px;}
+.chat-suggestions{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 12px;}
+.chat-sug{background:var(--sun-pale);color:var(--sun);border:1px solid var(--border-sun);padding:6px 12px;border-radius:100px;font-size:12px;cursor:pointer;transition:var(--tr);}
+.chat-sug:hover{background:var(--sun);color:var(--white);}
+.chat-input-row{display:flex;gap:8px;padding:12px 16px;border-top:1px solid var(--border);}
+.chat-input{flex:1;border:1px solid var(--border);border-radius:var(--r-sm);padding:10px 14px;font-size:14px;outline:none;font-family:inherit;color:var(--text);}
+.chat-input:focus{border-color:var(--sun);}
+.chat-send{background:var(--sun);color:var(--white);width:38px;height:38px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr);font-size:18px;}
+.chat-send:hover{background:var(--navy);}
+
+/* SCROLL TO TOP */
+.scroll-top{position:fixed;bottom:24px;left:24px;width:44px;height:44px;background:var(--white);border:1px solid var(--border);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--sh);font-size:20px;color:var(--navy);transition:var(--tr);z-index:800;}
+.scroll-top.show{display:flex;}
+.scroll-top:hover{background:var(--navy);color:var(--white);}
+
+/* MEDIA QUERIES */
+@media(max-width:900px){
+  .hero-content{grid-template-columns:1fr;gap:40px;}
+  .hero-card{display:none;}
+  .curriculum-wrap{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .nav-links,.nav-cta,.nav-actions{display:none;}
+  .hamburger{display:flex;}
+  .chat-box{width:calc(100vw - 32px);right:16px;}
+}
+@media(max-width:600px){
+  .hero-stats{grid-template-columns:1fr 1fr 1fr;}
+  .hero-stat-num{font-size:24px;}
+  .steps-track{flex-direction:column;}
+  .steps-track::before{display:none;}
+  .footer-grid{grid-template-columns:1fr;}
+  .section{padding:56px 20px;}
+}
+@media(max-width:480px){
+  .hero-stats{grid-template-columns:repeat(3,1fr);}
+  .hero-stat{padding:14px 8px;}
+  .hero-stat-num{font-size:22px;}
+  .hero-stat-label{font-size:10px;}
+}
+
+/* UTILITY */
+.highlight{color:var(--sun);}
+.pill{display:inline-block;background:var(--navy-pale);color:var(--navy);padding:4px 12px;border-radius:100px;font-size:12px;font-weight:600;}
+.pill-sun{background:var(--sun-pale);color:var(--sun);}
+.pill-gold{background:#FEF3C7;color:#B45309;}
+.divider{height:1px;background:var(--border);margin:40px 0;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+@media(max-width:700px){.two-col{grid-template-columns:1fr;}}
+.info-box{background:var(--navy-pale);border:1px solid rgba(27,58,107,0.15);border-radius:14px;padding:24px;margin:24px 0;}
+.info-box h4{color:var(--navy);margin-bottom:8px;}
+.info-box p{font-size:14px;color:var(--text-md);}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="goPage('home')" style="cursor:pointer;">
+      <div class="nav-logo-icon">☀️</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-en">Sunrise Education</span>
+        <span class="nav-logo-zh" data-en="Homeschooling Since 2014" data-zh="阳光学府 · 2014" data-ms="Sejak 2014">阳光学府 · 2014</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <div class="nav-link active" onclick="goPage('home')" data-en="Home" data-zh="首页" data-ms="Utama">首页</div>
+      <div class="nav-link" onclick="goPage('academic')" data-en="Academic" data-zh="学术" data-ms="Akademik">学术</div>
+      <div class="nav-link" onclick="goPage('admissions')" data-en="Admissions" data-zh="招生" data-ms="Kemasukan">招生</div>
+      <div class="nav-link" onclick="goPage('vision')" data-en="Vision" data-zh="愿景" data-ms="Visi">愿景</div>
+      <div class="nav-link" onclick="goPage('about')" data-en="About Us" data-zh="关于我们" data-ms="Tentang Kami">关于我们</div>
+    </div>
+    <div class="nav-actions">
+      <span class="lang-btn" onclick="setLang('en')">EN</span>
+      <span class="lang-btn active" onclick="setLang('zh')">中</span>
+      <span class="lang-btn" onclick="setLang('ms')">BM</span>
+    </div>
+    <div class="nav-cta" onclick="goPage('admissions')" data-en="Enrol Now →" data-zh="立即报名 →" data-ms="Daftar Sekarang →">立即报名 →</div>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-link active" onclick="goPage('home');toggleMenu()" data-en="🏠 Home" data-zh="🏠 首页" data-ms="🏠 Utama">🏠 首页</div>
+  <div class="mobile-link" onclick="goPage('academic');toggleMenu()" data-en="📚 Academic" data-zh="📚 学术课程" data-ms="📚 Akademik">📚 学术课程</div>
+  <div class="mobile-link" onclick="goPage('admissions');toggleMenu()" data-en="✏️ Admissions" data-zh="✏️ 招生报名" data-ms="✏️ Kemasukan">✏️ 招生报名</div>
+  <div class="mobile-link" onclick="goPage('vision');toggleMenu()" data-en="🌟 Vision" data-zh="🌟 教育愿景" data-ms="🌟 Visi">🌟 教育愿景</div>
+  <div class="mobile-link" onclick="goPage('about');toggleMenu()" data-en="❤️ About Us" data-zh="❤️ 关于我们" data-ms="❤️ Tentang Kami">❤️ 关于我们</div>
+  <div class="mobile-langs">
+    <span class="lang-btn" onclick="setLang('en')">EN</span>
+    <span class="lang-btn active" onclick="setLang('zh')">中文</span>
+    <span class="lang-btn" onclick="setLang('ms')">BM</span>
+  </div>
+</div>
+
+<!-- ============ PAGE: HOME ============ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-circles">
+      <div class="hero-circle hc1"></div>
+      <div class="hero-circle hc2"></div>
+      <div class="hero-circle hc3"></div>
+    </div>
+    <div class="hero-rays"></div>
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge">
+          <span>✨</span>
+          <span data-en="Est. 2014 · Klang, Selangor" data-zh="创立于 2014 · 巴生，雪兰莪" data-ms="Ditubuhkan 2014 · Klang, Selangor">创立于 2014 · 巴生，雪兰莪</span>
+        </div>
+        <h1 class="hero-title" data-en="Where Every Child's <span style='color:var(--sun-lt)'>Light Shines</span> Brightest" data-zh="点亮每个孩子<span style='color:var(--sun-lt)'>心中的阳光</span>" data-ms="Di Mana Setiap Anak<br><span style='color:var(--sun-lt)'>Bersinar Paling Terang</span>">点亮每个孩子<span style="color:var(--sun-lt)">心中的阳光</span></h1>
+        <p class="hero-sub" data-en="Sunrise Education is Malaysia's premier IGCSE homeschooling centre — personalised learning journeys designed to nurture every child's unique talents, passion and potential." data-zh="阳光学府是马来西亚一流的IGCSE居家学习中心——为每位学生量身打造独特的学习旅程，发掘天赋，激发热情，成就无限可能。" data-ms="Sunrise Education ialah pusat homeschooling IGCSE terkemuka di Malaysia — perjalanan pembelajaran peribadi yang direka untuk memupuk bakat, semangat dan potensi unik setiap anak.">阳光学府是马来西亚一流的IGCSE居家学习中心——为每位学生量身打造独特的学习旅程，发掘天赋，激发热情，成就无限可能。</p>
+        <div class="hero-btns">
+          <div class="btn-primary" onclick="goPage('admissions')" data-en="Start Your Journey →" data-zh="开启学习之旅 →" data-ms="Mulakan Perjalanan →">开启学习之旅 →</div>
+          <div class="btn-outline" onclick="goPage('academic')" data-en="Our Curriculum" data-zh="了解课程" data-ms="Kurikulum Kami">了解课程</div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">10+</div>
+            <div class="hero-stat-label" data-en="Years of Excellence" data-zh="年卓越教育" data-ms="Tahun Kecemerlangan">年卓越教育</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">140+</div>
+            <div class="hero-stat-label" data-en="Countries Recognised" data-zh="国认可资格" data-ms="Negara Diiktiraf">国认可资格</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">7-18</div>
+            <div class="hero-stat-label" data-en="Ages Served" data-zh="岁全程陪伴" data-ms="Umur Dilayan">岁全程陪伴</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-title" data-en="Why Sunrise?" data-zh="为何选择阳光学府？" data-ms="Mengapa Sunrise?">为何选择阳光学府？</div>
+        <div class="hero-feature">
+          <div class="hero-feat-icon hfi-sun">🎓</div>
+          <div>
+            <div class="hero-feat-title" data-en="Cambridge IGCSE Certified" data-zh="剑桥IGCSE认证课程" data-ms="Pensijilan Cambridge IGCSE">剑桥IGCSE认证课程</div>
+            <div class="hero-feat-text" data-en="Internationally recognised qualification accepted by top global universities." data-zh="全球顶尖大学认可的国际资格，为孩子铺就世界舞台。" data-ms="Kelayakan yang diiktiraf antarabangsa dan diterima oleh universiti terkemuka.">全球顶尖大学认可的国际资格，为孩子铺就世界舞台。</div>
+          </div>
+        </div>
+        <div class="hero-feature">
+          <div class="hero-feat-icon hfi-gold">💡</div>
+          <div>
+            <div class="hero-feat-title" data-en="Student-Centred Learning" data-zh="以学生为核心的教学" data-ms="Pembelajaran Berpusatkan Pelajar">以学生为核心的教学</div>
+            <div class="hero-feat-text" data-en="Flexible, personalised modules tailored to each student's pace and strengths." data-zh="灵活个性化的模块，根据每个孩子的节奏和优势量身定制。" data-ms="Modul fleksibel dan peribadi mengikut kadar dan kekuatan setiap pelajar.">灵活个性化的模块，根据每个孩子的节奏和优势量身定制。</div>
+          </div>
+        </div>
+        <div class="hero-feature">
+          <div class="hero-feat-icon hfi-navy">🌱</div>
+          <div>
+            <div class="hero-feat-title" data-en="Holistic Growth Focus" data-zh="全人成长关怀" data-ms="Fokus Pertumbuhan Holistik">全人成长关怀</div>
+            <div class="hero-feat-text" data-en="We nurture mind, body and character alongside academic excellence." data-zh="学业卓越之外，我们更关注孩子的心理、身体与品格成长。" data-ms="Kami memupuk minda, badan dan watak bersama kecemerlangan akademik.">学业卓越之外，我们更关注孩子的心理、身体与品格成长。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="Our Services" data-zh="我们的服务" data-ms="Perkhidmatan Kami">我们的服务</div>
+        <h2 class="section-title" data-en="Everything Your Child Needs to Thrive" data-zh="成就孩子所需的一切" data-ms="Semua Yang Diperlukan Anak Anda">成就孩子所需的一切</h2>
+        <p class="section-sub" data-en="Sunrise Education offers a complete ecosystem of learning, growth and opportunity — designed for Malaysian families who want the best for their children." data-zh="阳光学府为马来西亚家庭提供完整的学习、成长与机遇生态系统——一切只为给孩子最好的未来。" data-ms="Sunrise Education menawarkan ekosistem pembelajaran, pertumbuhan dan peluang yang lengkap.">阳光学府为马来西亚家庭提供完整的学习、成长与机遇生态系统——一切只为给孩子最好的未来。</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon ci-sun">🗺️</div>
+          <div class="card-title" data-en="Personalised Learning Journey" data-zh="个性化学习旅程" data-ms="Perjalanan Pembelajaran Peribadi">个性化学习旅程</div>
+          <div class="card-text" data-en="Every student receives a custom learning roadmap built around their unique strengths, learning style and goals — not a one-size-fits-all curriculum." data-zh="每位学生都有专属的学习路线图，根据其独特优势、学习风格与目标量身打造，绝非千篇一律。" data-ms="Setiap pelajar mendapat peta jalan pembelajaran yang disesuaikan dengan kekuatan, gaya pembelajaran dan matlamat mereka.">每位学生都有专属的学习路线图，根据其独特优势、学习风格与目标量身打造，绝非千篇一律。</div>
+        </div>
+        <div class="card">
+          <div class="card-icon ci-navy">🌍</div>
+          <div class="card-title" data-en="Globally Recognised IGCSE" data-zh="国际认可IGCSE文凭" data-ms="IGCSE Diiktiraf Dunia">国际认可IGCSE文凭</div>
+          <div class="card-text" data-en="Our Cambridge IGCSE qualification is recognised by 140+ countries and top universities worldwide — opening doors to a borderless future." data-zh="剑桥IGCSE资格获140多个国家及全球顶尖大学认可，为孩子打开无国界的未来之门。" data-ms="Kelayakan Cambridge IGCSE kami diiktiraf oleh 140+ negara dan universiti terkemuka di seluruh dunia.">剑桥IGCSE资格获140多个国家及全球顶尖大学认可，为孩子打开无国界的未来之门。</div>
+        </div>
+        <div class="card">
+          <div class="card-icon ci-gold">📖</div>
+          <div class="card-title" data-en="English Mastery Modules" data-zh="灵活英语精进模块" data-ms="Modul Penguasaan Bahasa Inggeris">灵活英语精进模块</div>
+          <div class="card-text" data-en="Our flexible, effective English learning modules bring out the best in every student — from foundational reading to advanced academic writing." data-zh="灵活高效的英语学习模块，从基础阅读到高级学术写作，全面提升每位学生的英语能力。" data-ms="Modul pembelajaran Bahasa Inggeris kami yang fleksibel dan berkesan membantu setiap pelajar mencapai tahap terbaik.">灵活高效的英语学习模块，从基础阅读到高级学术写作，全面提升每位学生的英语能力。</div>
+        </div>
+        <div class="card">
+          <div class="card-icon ci-green">🌱</div>
+          <div class="card-title" data-en="Holistic Child Development" data-zh="全人发展关怀" data-ms="Perkembangan Kanak-kanak Holistik">全人发展关怀</div>
+          <div class="card-text" data-en="We care deeply about mental wellness, physical health and emotional growth — because a thriving child is more than just good grades." data-zh="我们深度关注心理健康、身体发育与情感成长——因为优秀的孩子远不止于成绩单。" data-ms="Kami mengambil berat tentang kesihatan mental, fizikal dan pertumbuhan emosi — kerana anak yang berkembang melebihi sekadar gred.">我们深度关注心理健康、身体发育与情感成长——因为优秀的孩子远不止于成绩单。</div>
+        </div>
+        <div class="card">
+          <div class="card-icon ci-sun">🎭</div>
+          <div class="card-title" data-en="Rich Co-Curricular Activities" data-zh="丰富课外活动" data-ms="Aktiviti Ko-kurikulum Yang Kaya">丰富课外活动</div>
+          <div class="card-text" data-en="Arts, sports, STEM clubs, leadership camps and more — because well-rounded children become extraordinary adults." data-zh="艺术、体育、STEM社团、领导力营等多彩活动——全面发展的孩子成就非凡的未来。" data-ms="Seni, sukan, kelab STEM, kem kepimpinan dan lagi — kerana kanak-kanak seimbang menjadi orang dewasa yang luar biasa.">艺术、体育、STEM社团、领导力营等多彩活动——全面发展的孩子成就非凡的未来。</div>
+        </div>
+        <div class="card">
+          <div class="card-icon ci-navy">👨‍👩‍👧</div>
+          <div class="card-title" data-en="Active Parent Partnership" data-zh="家长深度参与" data-ms="Perkongsian Ibu Bapa Aktif">家长深度参与</div>
+          <div class="card-text" data-en="Bi-annual Parent-Teacher Conferences plus regular progress updates keep you fully informed and involved in your child's journey." data-zh="每年两次家长教师会议，定期学习进度报告，让您全程了解并参与孩子的成长旅程。" data-ms="Persidangan Ibu Bapa-Guru dua kali setahun dan kemas kini kemajuan berkala memastikan anda sentiasa terlibat.">每年两次家长教师会议，定期学习进度报告，让您全程了解并参与孩子的成长旅程。</div>
+        </div>
+        <div class="card">
+          <div class="card-icon ci-gold">🎯</div>
+          <div class="card-title" data-en="Ability-Based Class Grouping" data-zh="按能力分班教学" data-ms="Kumpulan Kelas Berdasarkan Kebolehan">按能力分班教学</div>
+          <div class="card-text" data-en="Students are grouped by level and ability — ensuring every child learns at the right pace with appropriate challenge and support." data-zh="根据学生水平和能力科学分班，确保每位孩子在最适合的节奏中学习，获得恰到好处的挑战与支持。" data-ms="Pelajar dikumpulkan mengikut tahap dan kebolehan — memastikan setiap anak belajar pada kadar yang sesuai.">根据学生水平和能力科学分班，确保每位孩子在最适合的节奏中学习，获得恰到好处的挑战与支持。</div>
+        </div>
+        <div class="card">
+          <div class="card-icon ci-green">🏆</div>
+          <div class="card-title" data-en="University Pathway Support" data-zh="大学升学通道" data-ms="Sokongan Laluan Universiti">大学升学通道</div>
+          <div class="card-text" data-en="From IGCSE to A-Level, Foundation or Diploma programmes — we guide every student towards their dream university." data-zh="从IGCSE到A-Level、基础课程或文凭——我们全程引导每位学生迈向梦想大学。" data-ms="Dari IGCSE ke A-Level, Asasi atau Diploma — kami membimbing setiap pelajar ke universiti impian mereka.">从IGCSE到A-Level、基础课程或文凭——我们全程引导每位学生迈向梦想大学。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-strip">
+    <div class="section-header center" style="margin-bottom:48px;">
+      <div class="section-tag" style="background:rgba(245,197,24,0.15);color:var(--gold);" data-en="Our Mission" data-zh="我们的使命" data-ms="Misi Kami">我们的使命</div>
+      <h2 class="section-title" style="color:var(--white);" data-en="Guiding Principles of Sunrise Education" data-zh="阳光学府的核心使命" data-ms="Prinsip Panduan Sunrise Education">阳光学府的核心使命</h2>
+    </div>
+    <div class="mission-grid">
+      <div class="mission-item">
+        <div class="mission-icon">🌟</div>
+        <div class="mission-title" data-en="Ignite Passion" data-zh="点燃热情" data-ms="Nyalakan Semangat">点燃热情</div>
+        <div class="mission-text" data-en="We discover and cultivate each child's unique interests and strengths, transforming learning into a joyful, lifelong pursuit." data-zh="发现并培养每位孩子独特的兴趣与优势，将学习转化为快乐、终身的追求。" data-ms="Kami menemui dan memupuk minat dan kekuatan unik setiap anak, menjadikan pembelajaran satu pencarian yang menyenangkan seumur hidup.">发现并培养每位孩子独特的兴趣与优势，将学习转化为快乐、终身的追求。</div>
+      </div>
+      <div class="mission-item">
+        <div class="mission-icon">🎓</div>
+        <div class="mission-title" data-en="Excellence in Education" data-zh="卓越教育品质" data-ms="Kecemerlangan dalam Pendidikan">卓越教育品质</div>
+        <div class="mission-text" data-en="Delivering world-class Cambridge IGCSE education with dedicated teachers who genuinely care about every student's success." data-zh="提供世界级剑桥IGCSE教育，教师团队真诚关注每位学生的成功与成长。" data-ms="Menyampaikan pendidikan Cambridge IGCSE bertaraf dunia dengan guru berdedikasi yang benar-benar peduli.">提供世界级剑桥IGCSE教育，教师团队真诚关注每位学生的成功与成长。</div>
+      </div>
+      <div class="mission-item">
+        <div class="mission-icon">💪</div>
+        <div class="mission-title" data-en="Build Resilience" data-zh="培育坚韧品格" data-ms="Bina Ketahanan">培育坚韧品格</div>
+        <div class="mission-text" data-en="We build confident, resilient young leaders who are ready to face challenges and seize opportunities in a complex world." data-zh="培育自信、坚韧的年轻领袖，让他们有能力面对挑战、把握机遇，在复杂世界中脱颖而出。" data-ms="Kami membina pemimpin muda yang yakin dan berdaya tahan, bersedia menghadapi cabaran dalam dunia yang kompleks.">培育自信、坚韧的年轻领袖，让他们有能力面对挑战、把握机遇，在复杂世界中脱颖而出。</div>
+      </div>
+      <div class="mission-item">
+        <div class="mission-icon">🤝</div>
+        <div class="mission-title" data-en="Family Partnership" data-zh="家校携手共育" data-ms="Perkongsian Keluarga">家校携手共育</div>
+        <div class="mission-text" data-en="Parents are our partners. We maintain open communication and collaboration to ensure every child flourishes inside and outside the classroom." data-zh="家长是我们最重要的合作伙伴。开放沟通，紧密协作，共同确保每个孩子在课内外全面茁壮成长。" data-ms="Ibu bapa adalah rakan kongsi kami. Kami mengekalkan komunikasi dan kerjasama terbuka untuk memastikan setiap anak berkembang.">家长是我们最重要的合作伙伴。开放沟通，紧密协作，共同确保每个孩子在课内外全面茁壮成长。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUNRISE HOMESCHOOLING -->
+  <section class="section">
+    <div class="container">
+      <div class="curriculum-wrap">
+        <div>
+          <div class="section-tag" data-en="Sunrise Homeschooling" data-zh="阳光居家学习" data-ms="Homeschooling Sunrise">阳光居家学习</div>
+          <h2 class="section-title" data-en="Why Homeschooling is the Future" data-zh="为何居家学习是未来趋势" data-ms="Mengapa Homeschooling Adalah Masa Depan">为何居家学习是未来趋势</h2>
+          <p style="color:var(--text-md);font-size:16px;line-height:1.8;margin-bottom:28px;" data-en="Sunrise Education's homeschooling model gives Malaysian families the flexibility of home-based learning combined with the rigour and prestige of a Cambridge IGCSE education. Your child learns at their own pace, in a supportive environment designed for deep understanding — not rote memorisation." data-zh="阳光学府的居家学习模式，让马来西亚家庭兼得居家学习的灵活性与剑桥IGCSE教育的严谨与声誉。孩子在自己的节奏中深度学习，在充满支持的环境里真正理解知识，而非死记硬背。" data-ms="Model homeschooling Sunrise Education memberi keluarga Malaysia fleksibiliti pembelajaran berasaskan rumah digabungkan dengan ketegasan pendidikan Cambridge IGCSE.">阳光学府的居家学习模式，让马来西亚家庭兼得居家学习的灵活性与剑桥IGCSE教育的严谨与声誉。孩子在自己的节奏中深度学习，在充满支持的环境里真正理解知识，而非死记硬背。</p>
+          <div class="curriculum-features">
+            <div class="cf-item">
+              <div class="cf-check">✓</div>
+              <div>
+                <div class="cf-title" data-en="Freedom from rigid school schedules" data-zh="告别僵化的学校时间表" data-ms="Bebas dari jadual sekolah yang tegar">告别僵化的学校时间表</div>
+                <div class="cf-text" data-en="Flexible timetables designed around your family's lifestyle and your child's natural learning rhythm." data-zh="根据家庭生活方式和孩子天然学习节奏，弹性安排课程时间表。" data-ms="Jadual waktu fleksibel direka mengikut gaya hidup keluarga dan irama pembelajaran semula jadi anak anda.">根据家庭生活方式和孩子天然学习节奏，弹性安排课程时间表。</div>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-check">✓</div>
+              <div>
+                <div class="cf-title" data-en="More one-on-one attention" data-zh="更多一对一关注" data-ms="Lebih perhatian satu-satu">更多一对一关注</div>
+                <div class="cf-text" data-en="Smaller class sizes mean teachers truly know each child — their strengths, challenges and dreams." data-zh="小班制让教师真正了解每个孩子——他们的优势、挑战和梦想。" data-ms="Saiz kelas yang lebih kecil bermaksud guru benar-benar mengenali setiap anak.">小班制让教师真正了解每个孩子——他们的优势、挑战和梦想。</div>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-check">✓</div>
+              <div>
+                <div class="cf-title" data-en="Global recognition without leaving Malaysia" data-zh="无需出国，获国际认可" data-ms="Pengiktirafan global tanpa meninggalkan Malaysia">无需出国，获国际认可</div>
+                <div class="cf-text" data-en="Our IGCSE students gain a qualification respected worldwide — right here in Klang." data-zh="我们的IGCSE学生在巴生即可获得全球认可的资格文凭。" data-ms="Pelajar IGCSE kami mendapat kelayakan yang dihormati di seluruh dunia — di sini di Klang.">我们的IGCSE学生在巴生即可获得全球认可的资格文凭。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum-img">
+          <div>
+            <div class="curriculum-visual">☀️📚🌟</div>
+            <p style="text-align:center;color:var(--navy);font-weight:600;margin-top:20px;font-size:18px;" data-en="Learning with Joy & Purpose" data-zh="快乐学习，有目标地成长" data-ms="Belajar dengan Gembira & Bertujuan">快乐学习，有目标地成长</p>
+          </div>
+          <div class="curriculum-badges">
+            <div class="cbadge">Cambridge ✓</div>
+            <div class="cbadge">Ages 7–18</div>
+            <div class="cbadge">140+ Countries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="Parent Stories" data-zh="家长心声" data-ms="Cerita Ibu Bapa">家长心声</div>
+        <h2 class="section-title" data-en="Families Love Sunrise Education" data-zh="家庭们爱上阳光学府" data-ms="Keluarga Menyukai Sunrise Education">家庭们爱上阳光学府</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testi">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text" data-en='"My son struggled in traditional school. At Sunrise, he found his confidence and passion for science. Two years later, he is thriving in IGCSE with top scores!"' data-zh='"我的儿子在传统学校很挣扎。在阳光学府，他找到了自信和对科学的热情。两年后，他在IGCSE考试中取得了优秀成绩！"' data-ms='"Anak saya bergelut di sekolah tradisional. Di Sunrise, dia menemui keyakinan dan semangat untuk sains. Dua tahun kemudian, dia cemerlang dalam IGCSE!"'>"我的儿子在传统学校很挣扎。在阳光学府，他找到了自信和对科学的热情。两年后，他在IGCSE考试中取得了优秀成绩！"</div>
+          <div class="testi-author">
+            <div class="testi-avatar">👩</div>
+            <div>
+              <div class="testi-name">Mdm. Lim Wei Ling</div>
+              <div class="testi-role" data-en="Parent of Ryan, 15" data-zh="Ryan (15岁) 的妈妈" data-ms="Ibu Ryan, 15 tahun">Ryan (15岁) 的妈妈</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text" data-en='"The teachers here are extraordinary. They know my daughter by name, by interest, by dream. Sunrise does not just teach — they nurture the whole child."' data-zh='"这里的老师非常出色。他们了解我女儿的名字、兴趣和梦想。阳光学府不只是教书——他们培育全人。"' data-ms='"Guru di sini luar biasa. Mereka mengenali anak saya dari nama, minat hingga impian. Sunrise bukan sekadar mengajar — mereka memupuk keseluruhan anak."'>"这里的老师非常出色。他们了解我女儿的名字、兴趣和梦想。阳光学府不只是教书——他们培育全人。"</div>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div>
+              <div class="testi-name">Encik Azman Razali</div>
+              <div class="testi-role" data-en="Parent of Hana, 12" data-zh="Hana (12岁) 的爸爸" data-ms="Bapa Hana, 12 tahun">Hana (12岁) 的爸爸</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text" data-en='"As a working mum, the flexible schedule is a lifesaver. My children get world-class education and I can plan around our family needs. Absolutely recommend Sunrise!"' data-zh='"作为职场妈妈，灵活的课程表是救星。孩子获得世界一流的教育，我也能根据家庭需要安排时间。强烈推荐阳光学府！"' data-ms='"Sebagai ibu yang bekerja, jadual fleksibel ini amat membantu. Anak-anak saya mendapat pendidikan bertaraf dunia. Sangat mengesyorkan Sunrise!"'>"作为职场妈妈，灵活的课程表是救星。孩子获得世界一流的教育，我也能根据家庭需要安排时间。强烈推荐阳光学府！"</div>
+          <div class="testi-author">
+            <div class="testi-avatar">👩‍💼</div>
+            <div>
+              <div class="testi-name">Mrs. Priya Nair</div>
+              <div class="testi-role" data-en="Parent of Arjun & Divya" data-zh="Arjun 与 Divya 的妈妈" data-ms="Ibu Arjun & Divya">Arjun 与 Divya 的妈妈</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2 data-en="Ready to Begin Your Child's Sunrise Journey?" data-zh="准备好开启孩子的阳光之旅了吗？" data-ms="Bersedia untuk Memulakan Perjalanan Sunrise Anak Anda?">准备好开启孩子的阳光之旅了吗？</h2>
+      <p data-en="Book a free consultation today. Our education advisors will help you find the perfect programme for your child." data-zh="立即预约免费咨询。我们的教育顾问将为您的孩子找到最合适的课程方案。" data-ms="Tempah konsultasi percuma hari ini. Penasihat pendidikan kami akan membantu anda mencari program yang sempurna untuk anak anda.">立即预约免费咨询。我们的教育顾问将为您的孩子找到最合适的课程方案。</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <div class="btn-white" onclick="goPage('admissions')">📋 <span data-en="Book Free Consultation" data-zh="预约免费咨询" data-ms="Tempah Konsultasi Percuma">预约免费咨询</span></div>
+        <a href="https://wa.me/60124251556" style="background:rgba(255,255,255,0.15);color:var(--white);border:1.5px solid rgba(255,255,255,0.5);padding:14px 28px;border-radius:var(--r-sm);font-size:15px;font-weight:600;cursor:pointer;transition:var(--tr);display:inline-flex;align-items:center;gap:8px;" target="_blank">💬 <span data-en="WhatsApp Us" data-zh="WhatsApp 联系" data-ms="WhatsApp Kami">WhatsApp 联系</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAGE: ACADEMIC ============ -->
+<div class="page" id="page-academic">
+  <section style="background:linear-gradient(135deg,var(--navy),#0F2447);padding:80px 24px 60px;text-align:center;">
+    <div class="container">
+      <div class="section-tag" style="background:rgba(245,197,24,0.15);color:var(--gold);" data-en="Academic Programmes" data-zh="学术课程" data-ms="Program Akademik">学术课程</div>
+      <h1 class="section-title" style="color:var(--white);font-size:clamp(32px,5vw,52px);" data-en="World-Class Learning, Personalised for Every Child" data-zh="世界级学习，为每个孩子量身定制" data-ms="Pembelajaran Bertaraf Dunia, Diperibadikan untuk Setiap Anak">世界级学习，为每个孩子量身定制</h1>
+      <p style="color:rgba(255,255,255,0.7);font-size:17px;max-width:600px;margin:16px auto 32px;" data-en="Cambridge IGCSE curriculum delivered with heart, creativity and a commitment to lifelong curiosity." data-zh="以心灵、创意和终身好奇心为驱动，传授剑桥IGCSE课程。" data-ms="Kurikulum Cambridge IGCSE disampaikan dengan hati, kreativiti dan komitmen kepada rasa ingin tahu seumur hidup.">以心灵、创意和终身好奇心为驱动，传授剑桥IGCSE课程。</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <div class="btn-primary" onclick="goPage('academic-primary')">🏫 <span data-en="Primary (Ages 7–12)" data-zh="小学课程 (7-12岁)" data-ms="Rendah (Umur 7–12)">小学课程 (7-12岁)</span></div>
+        <div class="btn-outline" onclick="goPage('academic-secondary')">🎓 <span data-en="Secondary (Ages 13–18)" data-zh="中学课程 (13-18岁)" data-ms="Menengah (Umur 13–18)">中学课程 (13-18岁)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="IGCSE Cambridge" data-zh="剑桥IGCSE" data-ms="Cambridge IGCSE">剑桥IGCSE</div>
+        <h2 class="section-title" data-en="Why Cambridge IGCSE?" data-zh="为何选择剑桥IGCSE？" data-ms="Mengapa Cambridge IGCSE?">为何选择剑桥IGCSE？</h2>
+        <p class="section-sub" data-en="The International General Certificate of Secondary Education is the world's most popular international qualification for 14–16 year olds, recognised globally." data-zh="国际中学教育普通证书（IGCSE）是全球14-16岁学生最受欢迎的国际资格，享誉全球。" data-ms="Sijil Am Pendidikan Menengah Antarabangsa adalah kelayakan antarabangsa paling popular di dunia untuk pelajar berumur 14–16 tahun.">国际中学教育普通证书（IGCSE）是全球14-16岁学生最受欢迎的国际资格，享誉全球。</p>
+      </div>
+      <div class="cards-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+        <div class="card" style="text-align:center;padding:32px 20px;">
+          <div style="font-size:40px;margin-bottom:12px;">🌍</div>
+          <div class="card-title" data-en="140+ Countries" data-zh="140+ 国家认可" data-ms="140+ Negara">140+ 国家认可</div>
+          <div class="card-text" data-en="Globally accepted qualification for higher education entry." data-zh="全球接受的高等教育入学资格。" data-ms="Kelayakan yang diterima secara global untuk kemasukan pendidikan tinggi.">全球接受的高等教育入学资格。</div>
+        </div>
+        <div class="card" style="text-align:center;padding:32px 20px;">
+          <div style="font-size:40px;margin-bottom:12px;">🏫</div>
+          <div class="card-title" data-en="Path to A-Levels" data-zh="A-Level升学通道" data-ms="Laluan ke A-Level">A-Level升学通道</div>
+          <div class="card-text" data-en="Strong foundation for A-Level, Foundation or Diploma programmes." data-zh="为A-Level、基础课程或文凭课程奠定坚实基础。" data-ms="Asas kukuh untuk program A-Level, Asasi atau Diploma.">为A-Level、基础课程或文凭课程奠定坚实基础。</div>
+        </div>
+        <div class="card" style="text-align:center;padding:32px 20px;">
+          <div style="font-size:40px;margin-bottom:12px;">📊</div>
+          <div class="card-title" data-en="Critical Thinking Focus" data-zh="批判思维培养" data-ms="Fokus Pemikiran Kritis">批判思维培养</div>
+          <div class="card-text" data-en="Cambridge builds analytical, research and problem-solving skills essential for university success." data-zh="剑桥课程培养大学成功必备的分析、研究和解决问题能力。" data-ms="Cambridge membina kemahiran analitikal, penyelidikan dan penyelesaian masalah yang penting untuk kejayaan universiti.">剑桥课程培养大学成功必备的分析、研究和解决问题能力。</div>
+        </div>
+        <div class="card" style="text-align:center;padding:32px 20px;">
+          <div style="font-size:40px;margin-bottom:12px;">✨</div>
+          <div class="card-title" data-en="Subject Flexibility" data-zh="科目灵活选择" data-ms="Fleksibiliti Subjek">科目灵活选择</div>
+          <div class="card-text" data-en="Students choose subjects that align with their interests and future career aspirations." data-zh="学生可以选择符合自身兴趣和未来职业抱负的科目。" data-ms="Pelajar memilih subjek yang sejajar dengan minat dan aspirasi kerjaya masa depan mereka.">学生可以选择符合自身兴趣和未来职业抱负的科目。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYLLABUS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="Cambridge Syllabus" data-zh="剑桥课程大纲" data-ms="Silibus Cambridge">剑桥课程大纲</div>
+        <h2 class="section-title" data-en="Subjects We Offer" data-zh="我们提供的科目" data-ms="Subjek Yang Kami Tawarkan">我们提供的科目</h2>
+        <div class="age-tabs" style="justify-content:center;margin-top:24px;">
+          <div class="age-tab active" onclick="switchTab('primary')" data-en="Primary (7–12)" data-zh="小学 (7-12岁)" data-ms="Rendah (7–12)">小学 (7-12岁)</div>
+          <div class="age-tab" onclick="switchTab('secondary')" data-en="Secondary (13–18)" data-zh="中学 (13-18岁)" data-ms="Menengah (13–18)">中学 (13-18岁)</div>
+        </div>
+      </div>
+      <div class="tab-panel active" id="tab-primary">
+        <div class="syllabus-grid">
+          <div class="subj-card"><div class="subj-icon">📖</div><div class="subj-name" data-en="English Language" data-zh="英语语言" data-ms="Bahasa Inggeris">英语语言</div><div class="subj-code">Cambridge Primary English</div></div>
+          <div class="subj-card"><div class="subj-icon">🔢</div><div class="subj-name" data-en="Mathematics" data-zh="数学" data-ms="Matematik">数学</div><div class="subj-code">Cambridge Primary Maths</div></div>
+          <div class="subj-card"><div class="subj-icon">🔬</div><div class="subj-name" data-en="Science" data-zh="科学" data-ms="Sains">科学</div><div class="subj-code">Cambridge Primary Science</div></div>
+          <div class="subj-card"><div class="subj-icon">🗺️</div><div class="subj-name" data-en="Global Perspectives" data-zh="全球视野" data-ms="Perspektif Global">全球视野</div><div class="subj-code">Global Perspectives</div></div>
+          <div class="subj-card"><div class="subj-icon">🎨</div><div class="subj-name" data-en="Creative Arts" data-zh="创意艺术" data-ms="Seni Kreatif">创意艺术</div><div class="subj-code">Arts & Crafts</div></div>
+          <div class="subj-card"><div class="subj-icon">💻</div><div class="subj-name" data-en="Digital Literacy" data-zh="数字素养" data-ms="Literasi Digital">数字素养</div><div class="subj-code">ICT Foundations</div></div>
+          <div class="subj-card"><div class="subj-icon">🇲🇾</div><div class="subj-name" data-en="Bahasa Malaysia" data-zh="马来语" data-ms="Bahasa Malaysia">马来语</div><div class="subj-code">National Language</div></div>
+          <div class="subj-card"><div class="subj-icon">🧘</div><div class="subj-name" data-en="Life Skills & Wellness" data-zh="生活技能与健康" data-ms="Kemahiran Hidup & Kesejahteraan">生活技能与健康</div><div class="subj-code">Character Education</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-secondary">
+        <div class="syllabus-grid">
+          <div class="subj-card"><div class="subj-icon">📖</div><div class="subj-name" data-en="English Language & Literature" data-zh="英语语言与文学" data-ms="Bahasa & Sastera Inggeris">英语语言与文学</div><div class="subj-code">IGCSE 0500 / 0486</div></div>
+          <div class="subj-card"><div class="subj-icon">➕</div><div class="subj-name" data-en="Mathematics" data-zh="数学" data-ms="Matematik">数学</div><div class="subj-code">IGCSE 0580</div></div>
+          <div class="subj-card"><div class="subj-icon">⚡</div><div class="subj-name" data-en="Physics" data-zh="物理" data-ms="Fizik">物理</div><div class="subj-code">IGCSE 0625</div></div>
+          <div class="subj-card"><div class="subj-icon">🧪</div><div class="subj-name" data-en="Chemistry" data-zh="化学" data-ms="Kimia">化学</div><div class="subj-code">IGCSE 0620</div></div>
+          <div class="subj-card"><div class="subj-icon">🌿</div><div class="subj-name" data-en="Biology" data-zh="生物" data-ms="Biologi">生物</div><div class="subj-code">IGCSE 0610</div></div>
+          <div class="subj-card"><div class="subj-icon">🌏</div><div class="subj-name" data-en="Geography" data-zh="地理" data-ms="Geografi">地理</div><div class="subj-code">IGCSE 0460</div></div>
+          <div class="subj-card"><div class="subj-icon">📜</div><div class="subj-name" data-en="History" data-zh="历史" data-ms="Sejarah">历史</div><div class="subj-code">IGCSE 0470</div></div>
+          <div class="subj-card"><div class="subj-icon">💼</div><div class="subj-name" data-en="Business Studies" data-zh="商业学" data-ms="Pengajian Perniagaan">商业学</div><div class="subj-code">IGCSE 0450</div></div>
+          <div class="subj-card"><div class="subj-icon">💰</div><div class="subj-name" data-en="Economics" data-zh="经济" data-ms="Ekonomi">经济</div><div class="subj-code">IGCSE 0455</div></div>
+          <div class="subj-card"><div class="subj-icon">💻</div><div class="subj-name" data-en="Computer Science" data-zh="计算机科学" data-ms="Sains Komputer">计算机科学</div><div class="subj-code">IGCSE 0478</div></div>
+          <div class="subj-card"><div class="subj-icon">🎨</div><div class="subj-name" data-en="Art & Design" data-zh="艺术与设计" data-ms="Seni & Reka Bentuk">艺术与设计</div><div class="subj-code">IGCSE 0400</div></div>
+          <div class="subj-card"><div class="subj-icon">🇲🇾</div><div class="subj-name" data-en="Bahasa Malaysia" data-zh="马来语" data-ms="Bahasa Malaysia">马来语</div><div class="subj-code">IGCSE 0546</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CO-CURRICULAR ACTIVITIES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="Co-Curricular" data-zh="课外活动" data-ms="Ko-Kurikulum">课外活动</div>
+        <h2 class="section-title" data-en="Beyond the Classroom — Where Passions Come Alive" data-zh="课室之外——热情在这里绽放" data-ms="Luar Bilik Darjah — Di Mana Semangat Hidup">课室之外——热情在这里绽放</h2>
+        <p class="section-sub" data-en="Our rich activity programme develops creativity, teamwork, leadership and physical health — essential ingredients for a well-rounded individual." data-zh="我们丰富的活动课程培养创造力、团队合作、领导力和体能——全面发展的必要元素。" data-ms="Program aktiviti kami yang kaya membangunkan kreativiti, kerja berpasukan, kepimpinan dan kesihatan fizikal.">我们丰富的活动课程培养创造力、团队合作、领导力和体能——全面发展的必要元素。</p>
+      </div>
+      <div class="activity-strip">
+        <div class="activity-item" style="background:var(--sun-pale);"><div class="ai-icon">🎨</div><div class="ai-label" data-en="Visual Arts" data-zh="视觉艺术" data-ms="Seni Visual">视觉艺术</div><div class="ai-sub" data-en="Drawing, Painting, Crafts" data-zh="绘画、油画、手工" data-ms="Lukisan, Lukisan Cat, Kraf">绘画、油画、手工</div></div>
+        <div class="activity-item" style="background:var(--navy-pale);"><div class="ai-icon">⚽</div><div class="ai-label" data-en="Sports & Fitness" data-zh="体育与健身" data-ms="Sukan & Kecergasan">体育与健身</div><div class="ai-sub" data-en="Team sports & individual training" data-zh="团队体育与个人训练" data-ms="Sukan pasukan & latihan individu">团队体育与个人训练</div></div>
+        <div class="activity-item" style="background:#EAF3DE;"><div class="ai-icon">🤖</div><div class="ai-label" data-en="STEM Club" data-zh="STEM社团" data-ms="Kelab STEM">STEM社团</div><div class="ai-sub" data-en="Robotics, Coding, Science" data-zh="机器人、编程、科学" data-ms="Robotik, Pengekodan, Sains">机器人、编程、科学</div></div>
+        <div class="activity-item" style="background:#FEF3C7;"><div class="ai-icon">🎭</div><div class="ai-label" data-en="Drama & Theatre" data-zh="戏剧与剧场" data-ms="Drama & Teater">戏剧与剧场</div><div class="ai-sub" data-en="Performance, public speaking" data-zh="演出、公众演讲" data-ms="Persembahan, ucapan awam">演出、公众演讲</div></div>
+        <div class="activity-item" style="background:var(--sun-pale);"><div class="ai-icon">🎵</div><div class="ai-label" data-en="Music & Choir" data-zh="音乐与合唱团" data-ms="Muzik & Koir">音乐与合唱团</div><div class="ai-sub" data-en="Instruments, vocal performance" data-zh="乐器、声乐表演" data-ms="Alat muzik, persembahan vokal">乐器、声乐表演</div></div>
+        <div class="activity-item" style="background:var(--navy-pale);"><div class="ai-icon">🏕️</div><div class="ai-label" data-en="Leadership Camps" data-zh="领导力营" data-ms="Kem Kepimpinan">领导力营</div><div class="ai-sub" data-en="Character building, teamwork" data-zh="品格培养、团队协作" data-ms="Pembangunan watak, kerja berpasukan">品格培养、团队协作</div></div>
+        <div class="activity-item" style="background:#E8F7F1;"><div class="ai-icon">🌱</div><div class="ai-label" data-en="Nature & Environment" data-zh="自然与环境" data-ms="Alam & Persekitaran">自然与环境</div><div class="ai-sub" data-en="Eco awareness, gardening" data-zh="环保意识、园艺" data-ms="Kesedaran eko, berkebun">环保意识、园艺</div></div>
+        <div class="activity-item" style="background:#FEF3C7;"><div class="ai-icon">📚</div><div class="ai-label" data-en="Book Club" data-zh="读书会" data-ms="Kelab Buku">读书会</div><div class="ai-sub" data-en="Reading, storytelling, debate" data-zh="阅读、讲故事、辩论" data-ms="Pembacaan, bercerita, debat">阅读、讲故事、辩论</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-en="Academic Calendar" data-zh="学术日历" data-ms="Kalender Akademik">学术日历</div>
+        <h2 class="section-title" data-en="2025–2026 Key Dates" data-zh="2025–2026 重要日期" data-ms="Tarikh Penting 2025–2026">2025–2026 重要日期</h2>
+      </div>
+      <div class="calendar-grid">
+        <div class="cal-card">
+          <div class="cal-header" data-en="Term 1 (Jan–Apr)" data-zh="第一学期 (1月–4月)" data-ms="Penggal 1 (Jan–Apr)">第一学期 (1月–4月)</div>
+          <div class="cal-body">
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="New student orientation week" data-zh="新生入学周" data-ms="Minggu orientasi pelajar baru">新生入学周</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Chinese New Year celebration" data-zh="农历新年庆典" data-ms="Sambutan Tahun Baharu Cina">农历新年庆典</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Parent-Teacher Conference #1" data-zh="第一次家长教师会议" data-ms="Persidangan Ibu Bapa-Guru #1">第一次家长教师会议</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Mid-term examinations" data-zh="期中考试" data-ms="Peperiksaan pertengahan penggal">期中考试</div></div>
+          </div>
+        </div>
+        <div class="cal-card">
+          <div class="cal-header" data-en="Term 2 (May–Aug)" data-zh="第二学期 (5月–8月)" data-ms="Penggal 2 (Mei–Ogt)">第二学期 (5月–8月)</div>
+          <div class="cal-body">
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Hari Raya cultural activities" data-zh="开斋节文化活动" data-ms="Aktiviti budaya Hari Raya">开斋节文化活动</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="STEM & Innovation Fair" data-zh="STEM与创新展览" data-ms="Pameran STEM & Inovasi">STEM与创新展览</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Leadership & Camp Programme" data-zh="领导力与营地课程" data-ms="Program Kepimpinan & Kem">领导力与营地课程</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Term 2 examinations" data-zh="第二学期考试" data-ms="Peperiksaan Penggal 2">第二学期考试</div></div>
+          </div>
+        </div>
+        <div class="cal-card">
+          <div class="cal-header" data-en="Term 3 (Sep–Dec)" data-zh="第三学期 (9月–12月)" data-ms="Penggal 3 (Sep–Dis)">第三学期 (9月–12月)</div>
+          <div class="cal-body">
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="IGCSE mock examinations" data-zh="IGCSE模拟考试" data-ms="Peperiksaan percubaan IGCSE">IGCSE模拟考试</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Annual Arts & Talent Show" data-zh="年度艺术与才艺展" data-ms="Pertunjukan Seni & Bakat Tahunan">年度艺术与才艺展</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Parent-Teacher Conference #2" data-zh="第二次家长教师会议" data-ms="Persidangan Ibu Bapa-Guru #2">第二次家长教师会议</div></div>
+            <div class="cal-event"><div class="cal-dot"></div><div data-en="Year-end graduation ceremony" data-zh="年终毕业典礼" data-ms="Majlis graduasi akhir tahun">年终毕业典礼</div></div>
+          </div>
+        </div>
+        <div class="cal-card">
+          <div class="cal-header" style="background:var(--sun);" data-en="IGCSE Examinations" data-zh="IGCSE正式考试" data-ms="Peperiksaan IGCSE">IGCSE正式考试</div>
+          <div class="cal-body">
+            <div class="cal-event"><div class="cal-dot" style="background:var(--navy);"></div><div data-en="May/June Cambridge exams" data-zh="5月/6月剑桥考试" data-ms="Peperiksaan Cambridge Mei/Jun">5月/6月剑桥考试</div></div>
+            <div class="cal-event"><div class="cal-dot" style="background:var(--navy);"></div><div data-en="Oct/Nov Cambridge exams" data-zh="10月/11月剑桥考试" data-ms="Peperiksaan Cambridge Okt/Nov">10月/11月剑桥考试</div></div>
+            <div class="cal-event"><div class="cal-dot" style="background:var(--navy);"></div><div data-en="Results released (approximately)" data-zh="成绩公布（约）" data-ms="Keputusan diumumkan (anggaran)">成绩公布（约）</div></div>
+            <div class="cal-event"><div class="cal-dot" style="background:var(--navy);"></div><div data-en="University applications support" data-zh="大学申请支持" data-ms="Sokongan permohonan universiti">大学申请支持</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title" data-en="Frequently Asked Questions" data-zh="常见问题" data-ms="Soalan Lazim">常见问题</h2>
+      </div>
+      <div class="faq-list" style="max-width:800px;margin:0 auto;">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span data-en="Is Sunrise Education's homeschooling legal in Malaysia?" data-zh="阳光学府的居家学习在马来西亚合法吗？" data-ms="Adakah homeschooling Sunrise Education sah di Malaysia?">阳光学府的居家学习在马来西亚合法吗？</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-a" data-en="Yes. Homeschooling is legal in Malaysia under the Education Act 1996 (Section 40). Parents may apply for an exemption from formal schooling. Sunrise Education guides families through the registration process." data-zh="是的。居家学习在马来西亚依据1996年教育法令（第40条）合法。家长可申请豁免正规学校教育。阳光学府将全程协助家庭完成注册流程。" data-ms="Ya. Homeschooling adalah sah di Malaysia di bawah Akta Pendidikan 1996 (Seksyen 40). Ibu bapa boleh memohon pengecualian daripada persekolahan formal.">是的。居家学习在马来西亚依据1996年教育法令（第40条）合法。家长可申请豁免正规学校教育。阳光学府将全程协助家庭完成注册流程。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span data-en="What age groups does Sunrise Education cater to?" data-zh="阳光学府服务哪些年龄段？" data-ms="Apakah kumpulan umur yang dilayan oleh Sunrise Education?">阳光学府服务哪些年龄段？</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-a" data-en="We welcome students aged 7 to 18 years old. Our Primary programme covers ages 7–12 and our Secondary (IGCSE) programme covers ages 13–18. Students are grouped by ability level, not just age." data-zh="我们欢迎7至18岁的学生。小学课程涵盖7-12岁，中学（IGCSE）课程涵盖13-18岁。学生按能力水平分班，而非仅依年龄。" data-ms="Kami mengalu-alukan pelajar berumur 7 hingga 18 tahun. Program Rendah kami meliputi umur 7–12 dan program Menengah (IGCSE) meliputi 13–18.">我们欢迎7至18岁的学生。小学课程涵盖7-12岁，中学（IGCSE）课程涵盖13-18岁。学生按能力水平分班，而非仅依年龄。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span data-en="How many students are in each class?" data-zh="每班有多少学生？" data-ms="Berapa ramai pelajar dalam setiap kelas?">每班有多少学生？</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-a" data-en="We maintain small class sizes to ensure personalised attention. Typically, classes have 8–15 students, allowing teachers to truly know and support each child." data-zh="我们保持小班规模以确保个性化关注。通常每班有8-15名学生，让教师真正了解并支持每个孩子。" data-ms="Kami mengekalkan saiz kelas yang kecil untuk memastikan perhatian yang diperibadikan. Biasanya, kelas mempunyai 8–15 pelajar.">我们保持小班规模以确保个性化关注。通常每班有8-15名学生，让教师真正了解并支持每个孩子。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span data-en="Can my child join mid-year?" data-zh="我的孩子可以中途插班吗？" data-ms="Bolehkah anak saya masuk pertengahan tahun?">我的孩子可以中途插班吗？</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-a" data-en="Absolutely! We accept students throughout the year. Your child will be assessed and placed in the most suitable class level. A catch-up plan will be developed if needed." data-zh="当然可以！我们全年接受学生入学。您的孩子将经过评估并安排至最合适的班级。如有需要，我们会制定跟进计划。" data-ms="Sudah tentu! Kami menerima pelajar sepanjang tahun. Anak anda akan dinilai dan ditempatkan di tahap kelas yang paling sesuai.">当然可以！我们全年接受学生入学。您的孩子将经过评估并安排至最合适的班级。如有需要，我们会制定跟进计划。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span data-en="What languages are classes taught in?" data-zh="课程以哪种语言教授？" data-ms="Apakah bahasa yang digunakan untuk pengajaran?">课程以哪种语言教授？</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-a" data-en="Our primary medium of instruction is English, in line with the Cambridge IGCSE programme. Bahasa Malaysia is also offered as a core subject. Our staff are multilingual and can communicate in English, Mandarin and Bahasa Malaysia." data-zh="我们的主要教学媒介是英语，与剑桥IGCSE课程一致。马来语也作为核心科目提供。我们的教职人员能以英语、华语和马来语沟通。" data-ms="Medium pengajaran utama kami adalah Bahasa Inggeris, sejajar dengan program Cambridge IGCSE. Bahasa Malaysia juga ditawarkan sebagai subjek teras.">我们的主要教学媒介是英语，与剑桥IGCSE课程一致。马来语也作为核心科目提供。我们的教职人员能以英语、华语和马来语沟通。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <div class="container">
+      <h2 data-en="Explore Our Full Academic Programme" data-zh="探索我们的完整学术课程" data-ms="Terokai Program Akademik Penuh Kami">探索我们的完整学术课程</h2>
+      <p data-en="Book a campus visit or download our academic brochure to learn more." data-zh="预约校园参观或下载学术手册了解更多。" data-ms="Tempah lawatan kampus atau muat turun brosur akademik kami untuk mengetahui lebih lanjut.">预约校园参观或下载学术手册了解更多。</p>
+      <div class="btn-white" onclick="goPage('admissions')">📋 <span data-en="Book Campus Visit" data-zh="预约校园参观" data-ms="Tempah Lawatan Kampus">预约校园参观</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAGE: ACADEMIC PRIMARY ============ -->
+<div class="page" id="page-academic-primary">
+  <section style="background:linear-gradient(135deg,var(--sun),#C56800);padding:80px 24px 60px;text-align:center;">
+    <div class="container">
+      <div style="display:inline-flex;gap:8px;margin-bottom:16px;">
+        <span class="pill-gold" style="cursor:pointer;" onclick="goPage('academic')">← <span data-en="Academic" data-zh="学术" data-ms="Akademik">学术</span></span>
+      </div>
+      <div class="section-tag" style="background:rgba(255,255,255,0.2);color:var(--white);" data-en="Primary Programme" data-zh="小学课程" data-ms="Program Rendah">小学课程</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,50px);color:var(--white);margin:16px 0;" data-en="Primary Education (Ages 7–12)" data-zh="小学教育 (7–12 岁)" data-ms="Pendidikan Rendah (Umur 7–12)">小学教育 (7–12 岁)</h1>
+      <p style="color:rgba(255,255,255,0.85);font-size:17px;max-width:560px;margin:0 auto;" data-en="The foundation of a great learner. Fun, curiosity-driven education built on the Cambridge Primary framework." data-zh="优秀学习者的基础。以剑桥小学框架为核心，充满趣味与好奇心驱动的教育。" data-ms="Asas pelajar yang hebat. Pendidikan yang menyeronokkan dan didorong oleh rasa ingin tahu berdasarkan rangka kerja Cambridge Primary.">优秀学习者的基础。以剑桥小学框架为核心，充满趣味与好奇心驱动的教育。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <h2 class="section-title" data-en="Building Bright Foundations" data-zh="奠定光明基础" data-ms="Membina Asas yang Cemerlang">奠定光明基础</h2>
+          <p style="color:var(--text-md);font-size:16px;line-height:1.8;margin-bottom:20px;" data-en="Our Primary programme (Ages 7–12) uses the Cambridge Primary framework to build strong academic foundations in a joyful, creative environment. Every lesson is designed to spark curiosity and love of learning." data-zh="我们的小学课程（7-12岁）采用剑桥小学框架，在充满欢乐和创意的环境中奠定扎实的学业基础。每堂课都旨在激发好奇心和学习热情。" data-ms="Program Rendah kami (Umur 7–12) menggunakan rangka kerja Cambridge Primary untuk membina asas akademik yang kukuh dalam persekitaran yang gembira dan kreatif.">我们的小学课程（7-12岁）采用剑桥小学框架，在充满欢乐和创意的环境中奠定扎实的学业基础。每堂课都旨在激发好奇心和学习热情。</p>
+          <div class="info-box">
+            <h4>📌 <span data-en="Key Highlights" data-zh="课程亮点" data-ms="Sorotan Utama">课程亮点</span></h4>
+            <p data-en="• Play-based and project-based learning methods<br>• Strong focus on English literacy and numeracy<br>• Creative arts and STEM integration<br>• Regular skill assessments — no high-pressure exams<br>• Character development and social skills<br>• Bi-annual parent progress reports" data-zh="• 游戏式与项目式学习方法<br>• 重点培养英语读写能力与数学能力<br>• 创意艺术与STEM融合<br>• 定期技能评估——无高压考试<br>• 品格发展与社交技能<br>• 每年两次家长进度报告" data-ms="• Kaedah pembelajaran berasaskan permainan dan projek<br>• Fokus kuat pada literasi Bahasa Inggeris dan numerasi<br>• Integrasi seni kreatif dan STEM<br>• Penilaian kemahiran berkala — tiada peperiksaan tekanan tinggi<br>• Pembangunan watak dan kemahiran sosial">• 游戏式与项目式学习方法<br>• 重点培养英语读写能力与数学能力<br>• 创意艺术与STEM融合<br>• 定期技能评估——无高压考试<br>• 品格发展与社交技能<br>• 每年两次家长进度报告</p>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:20px;color:var(--navy);margin-bottom:20px;" data-en="Primary Subjects" data-zh="小学科目" data-ms="Subjek Rendah">小学科目</h3>
+          <div class="syllabus-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="subj-card"><div class="subj-icon">📖</div><div class="subj-name" data-en="English" data-zh="英语" data-ms="Bahasa Inggeris">英语</div></div>
+            <div class="subj-card"><div class="subj-icon">🔢</div><div class="subj-name" data-en="Maths" data-zh="数学" data-ms="Matematik">数学</div></div>
+            <div class="subj-card"><div class="subj-icon">🔬</div><div class="subj-name" data-en="Science" data-zh="科学" data-ms="Sains">科学</div></div>
+            <div class="subj-card"><div class="subj-icon">🇲🇾</div><div class="subj-name" data-en="BM" data-zh="马来语" data-ms="BM">马来语</div></div>
+            <div class="subj-card"><div class="subj-icon">🎨</div><div class="subj-name" data-en="Arts" data-zh="艺术" data-ms="Seni">艺术</div></div>
+            <div class="subj-card"><div class="subj-icon">🌍</div><div class="subj-name" data-en="Global Studies" data-zh="全球研究" data-ms="Pengajian Global">全球研究</div></div>
+            <div class="subj-card"><div class="subj-icon">💻</div><div class="subj-name" data-en="Digital Skills" data-zh="数字技能" data-ms="Kemahiran Digital">数字技能</div></div>
+            <div class="subj-card"><div class="subj-icon">🧘</div><div class="subj-name" data-en="Life Skills" data-zh="生活技能" data-ms="Kemahiran Hidup">生活技能</div></div>
+          </div>
+          <div style="margin-top:16px;text-align:right;">
+            <div class="btn-primary" style="display:inline-flex;" onclick="goPage('admissions')">
+              <span data-en="Enrol Now →" data-zh="立即报名 →" data-ms="Daftar Sekarang →">立即报名 →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: ACADEMIC SECONDARY ============ -->
+<div class="page" id="page-academic-secondary">
+  <section style="background:linear-gradient(135deg,var(--navy),#152E5A);padding:80px 24px 60px;text-align:center;">
+    <div class="container">
+      <div style="display:inline-flex;gap:8px;margin-bottom:16px;">
+        <span class="pill" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);cursor:pointer;" onclick="goPage('academic')">← <span data-en="Academic" data-zh="学术" data-ms="Akademik">学术</span></span>
+      </div>
+      <div class="section-tag" style="background:rgba(245,197,24,0.15);color:var(--gold);" data-en="Secondary Programme" data-zh="中学课程" data-ms="Program Menengah">中学课程</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,50px);color:var(--white);margin:16px 0;" data-en="Secondary Education & IGCSE (Ages 13–18)" data-zh="中学教育与IGCSE (13–18 岁)" data-ms="Pendidikan Menengah & IGCSE (Umur 13–18)">中学教育与IGCSE (13–18 岁)</h1>
+      <p style="color:rgba(255,255,255,0.7);font-size:17px;max-width:580px;margin:0 auto;" data-en="Rigorous Cambridge IGCSE preparation with personalised mentoring — the pathway to top universities worldwide." data-zh="严谨的剑桥IGCSE备考与个性化辅导——通往全球顶尖大学的通道。" data-ms="Persediaan Cambridge IGCSE yang ketat dengan bimbingan peribadi — laluan ke universiti terkemuka di seluruh dunia.">严谨的剑桥IGCSE备考与个性化辅导——通往全球顶尖大学的通道。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <h2 class="section-title" data-en="Your Pathway to University Success" data-zh="您通往大学成功的道路" data-ms="Laluan Anda ke Kejayaan Universiti">您通往大学成功的道路</h2>
+          <p style="color:var(--text-md);font-size:16px;line-height:1.8;margin-bottom:20px;" data-en="Our Secondary programme prepares students aged 13–18 for the Cambridge IGCSE examinations. With dedicated subject teachers, structured exam preparation and university counselling, every student has the support they need to achieve their potential." data-zh="我们的中学课程为13-18岁学生备考剑桥IGCSE考试。专业科目教师、系统化考试备考和大学辅导，每位学生都获得所需的全面支持。" data-ms="Program Menengah kami menyediakan pelajar berumur 13–18 untuk peperiksaan Cambridge IGCSE. Dengan guru subjek berdedikasi dan kaunseling universiti.">我们的中学课程为13-18岁学生备考剑桥IGCSE考试。专业科目教师、系统化考试备考和大学辅导，每位学生都获得所需的全面支持。</p>
+          <div class="info-box">
+            <h4>🎓 <span data-en="After IGCSE — What's Next?" data-zh="IGCSE之后——下一步？" data-ms="Selepas IGCSE — Apa Seterusnya?">IGCSE之后——下一步？</span></h4>
+            <p data-en="Students can progress to:<br>• A-Levels (Cambridge, Edexcel)<br>• Foundation programmes (local & international)<br>• Diploma programmes<br>• Direct entry to universities<br>Our counsellors support every student's university application." data-zh="学生可以升读：<br>• A-Level（剑桥、爱德思）<br>• 基础课程（本地与国际）<br>• 文凭课程<br>• 直接入读大学<br>我们的辅导员支持每位学生的大学申请。" data-ms="Pelajar boleh meneruskan ke:<br>• A-Level (Cambridge, Edexcel)<br>• Program Asasi (tempatan & antarabangsa)<br>• Program Diploma<br>• Kemasukan terus ke universiti">学生可以升读：<br>• A-Level（剑桥、爱德思）<br>• 基础课程（本地与国际）<br>• 文凭课程<br>• 直接入读大学<br>我们的辅导员支持每位学生的大学申请。</p>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:20px;color:var(--navy);margin-bottom:20px;" data-en="IGCSE Subjects Available" data-zh="IGCSE 可选科目" data-ms="Subjek IGCSE Tersedia">IGCSE 可选科目</h3>
+          <div class="syllabus-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="subj-card"><div class="subj-icon">📖</div><div class="subj-name" data-en="English" data-zh="英语" data-ms="Bahasa Inggeris">英语</div><div class="subj-code">0500</div></div>
+            <div class="subj-card"><div class="subj-icon">➕</div><div class="subj-name" data-en="Maths" data-zh="数学" data-ms="Matematik">数学</div><div class="subj-code">0580</div></div>
+            <div class="subj-card"><div class="subj-icon">⚡</div><div class="subj-name" data-en="Physics" data-zh="物理" data-ms="Fizik">物理</div><div class="subj-code">0625</div></div>
+            <div class="subj-card"><div class="subj-icon">🧪</div><div class="subj-name" data-en="Chemistry" data-zh="化学" data-ms="Kimia">化学</div><div class="subj-code">0620</div></div>
+            <div class="subj-card"><div class="subj-icon">🌿</div><div class="subj-name" data-en="Biology" data-zh="生物" data-ms="Biologi">生物</div><div class="subj-code">0610</div></div>
+            <div class="subj-card"><div class="subj-icon">💼</div><div class="subj-name" data-en="Business" data-zh="商业" data-ms="Perniagaan">商业</div><div class="subj-code">0450</div></div>
+            <div class="subj-card"><div class="subj-icon">💻</div><div class="subj-name" data-en="Comp. Sci." data-zh="计算机" data-ms="Sains Komp.">计算机</div><div class="subj-code">0478</div></div>
+            <div class="subj-card"><div class="subj-icon">🌏</div><div class="subj-name" data-en="Geography" data-zh="地理" data-ms="Geografi">地理</div><div class="subj-code">0460</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: ADMISSIONS ============ -->
+<div class="page" id="page-admissions">
+  <section style="background:linear-gradient(135deg,var(--green),#1a7055);padding:80px 24px 60px;text-align:center;">
+    <div class="container">
+      <div class="section-tag" style="background:rgba(255,255,255,0.15);color:var(--white);" data-en="Admissions" data-zh="招生报名" data-ms="Kemasukan">招生报名</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,50px);color:var(--white);margin:16px 0;" data-en="Begin Your Child's Sunrise Journey" data-zh="开启孩子的阳光之旅" data-ms="Mulakan Perjalanan Sunrise Anak Anda">开启孩子的阳光之旅</h1>
+      <p style="color:rgba(255,255,255,0.85);font-size:17px;max-width:540px;margin:0 auto;" data-en="Joining Sunrise Education is simple and welcoming. We'll guide you every step of the way." data-zh="加入阳光学府简单而温馨。我们将在每一步引导您。" data-ms="Menyertai Sunrise Education adalah mudah dan mesra. Kami akan membimbing anda setiap langkah.">加入阳光学府简单而温馨。我们将在每一步引导您。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="How to Enrol" data-zh="如何报名" data-ms="Cara Mendaftar">如何报名</div>
+        <h2 class="section-title" data-en="4 Simple Steps to Join Sunrise" data-zh="4个简单步骤加入阳光" data-ms="4 Langkah Mudah untuk Menyertai Sunrise">4个简单步骤加入阳光</h2>
+      </div>
+      <div class="steps-track">
+        <div class="step-item done">
+          <div class="step-num">1</div>
+          <div class="step-label" data-en="Free Consultation" data-zh="免费咨询" data-ms="Konsultasi Percuma">免费咨询</div>
+          <p style="font-size:13px;color:var(--text-lt);margin-top:8px;" data-en="Call or WhatsApp us to schedule your free discovery session." data-zh="致电或WhatsApp预约免费探索会议。" data-ms="Hubungi atau WhatsApp kami untuk menjadualkan sesi penemuan percuma anda.">致电或WhatsApp预约免费探索会议。</p>
+        </div>
+        <div class="step-item done">
+          <div class="step-num">2</div>
+          <div class="step-label" data-en="Campus Visit" data-zh="校园参观" data-ms="Lawatan Kampus">校园参观</div>
+          <p style="font-size:13px;color:var(--text-lt);margin-top:8px;" data-en="Visit our Klang centre. Meet the teachers and see our facilities." data-zh="参观巴生中心，与教师会面，了解设施。" data-ms="Lawati pusat Klang kami. Temui guru-guru dan lihat kemudahan kami.">参观巴生中心，与教师会面，了解设施。</p>
+        </div>
+        <div class="step-item done">
+          <div class="step-num">3</div>
+          <div class="step-label" data-en="Assessment" data-zh="入学评估" data-ms="Penilaian">入学评估</div>
+          <p style="font-size:13px;color:var(--text-lt);margin-top:8px;" data-en="A friendly assessment helps us place your child in the right class level." data-zh="友好的评估帮助我们将您的孩子安排在合适的班级。" data-ms="Penilaian yang mesra membantu kami menempatkan anak anda di tahap kelas yang tepat.">友好的评估帮助我们将您的孩子安排在合适的班级。</p>
+        </div>
+        <div class="step-item done">
+          <div class="step-num">4</div>
+          <div class="step-label" data-en="Enrol & Start!" data-zh="报名·开始！" data-ms="Daftar & Mula!">报名·开始！</div>
+          <p style="font-size:13px;color:var(--text-lt);margin-top:8px;" data-en="Complete registration and welcome your child to the Sunrise family!" data-zh="完成注册，欢迎您的孩子加入阳光大家庭！" data-ms="Lengkapkan pendaftaran dan selamat datang anak anda ke keluarga Sunrise!">完成注册，欢迎您的孩子加入阳光大家庭！</p>
+        </div>
+      </div>
+
+      <!-- REQUIREMENTS -->
+      <div class="two-col" style="margin-top:48px;">
+        <div>
+          <h3 style="font-size:22px;color:var(--navy);margin-bottom:20px;" data-en="📋 Documents Required" data-zh="📋 所需文件" data-ms="📋 Dokumen Diperlukan">📋 所需文件</h3>
+          <div class="curriculum-features">
+            <div class="cf-item">
+              <div class="cf-check">✓</div>
+              <div>
+                <div class="cf-title" data-en="Birth Certificate (child)" data-zh="出生证明（孩子）" data-ms="Sijil Kelahiran (kanak-kanak)">出生证明（孩子）</div>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-check">✓</div>
+              <div>
+                <div class="cf-title" data-en="MyKad / Passport (parent)" data-zh="身份证/护照（家长）" data-ms="MyKad / Pasport (ibu bapa)">身份证/护照（家长）</div>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-check">✓</div>
+              <div>
+                <div class="cf-title" data-en="Latest school report (if applicable)" data-zh="最近学校成绩单（如有）" data-ms="Laporan sekolah terkini (jika ada)">最近学校成绩单（如有）</div>
+              </div>
+            </div>
+            <div class="cf-item">
+              <div class="cf-check">✓</div>
+              <div>
+                <div class="cf-title" data-en="Health declaration form" data-zh="健康申报表" data-ms="Borang pengisytiharan kesihatan">健康申报表</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:22px;color:var(--navy);margin-bottom:20px;" data-en="📞 Contact Us to Enrol" data-zh="📞 联系我们报名" data-ms="📞 Hubungi Kami untuk Mendaftar">📞 联系我们报名</h3>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <a href="tel:+60124251556" class="card" style="display:flex;align-items:center;gap:16px;padding:20px;text-decoration:none;">
+              <div style="font-size:28px;">📱</div>
+              <div>
+                <div style="font-size:12px;font-weight:700;color:var(--text-lt);text-transform:uppercase;letter-spacing:1px;" data-en="Call / WhatsApp" data-zh="致电 / WhatsApp" data-ms="Panggil / WhatsApp">致电 / WhatsApp</div>
+                <div style="font-size:18px;font-weight:700;color:var(--navy);">+6 012-425 1556</div>
+              </div>
+            </a>
+            <a href="mailto:LOVE@sun.edu.my" class="card" style="display:flex;align-items:center;gap:16px;padding:20px;text-decoration:none;">
+              <div style="font-size:28px;">✉️</div>
+              <div>
+                <div style="font-size:12px;font-weight:700;color:var(--text-lt);text-transform:uppercase;letter-spacing:1px;" data-en="Email" data-zh="电子邮件" data-ms="E-mel">电子邮件</div>
+                <div style="font-size:16px;font-weight:600;color:var(--sun);">LOVE@sun.edu.my</div>
+              </div>
+            </a>
+            <a href="https://wa.me/60124251556" target="_blank" class="btn-primary" style="justify-content:center;font-size:16px;padding:16px;">
+              💬 <span data-en="WhatsApp Us Now" data-zh="立即WhatsApp联系" data-ms="WhatsApp Kami Sekarang">立即WhatsApp联系</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUITION FEES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="Investment in Your Child" data-zh="为孩子的投资" data-ms="Pelaburan untuk Anak Anda">为孩子的投资</div>
+        <h2 class="section-title" data-en="Programme Fees" data-zh="课程收费" data-ms="Yuran Program">课程收费</h2>
+        <p class="section-sub" data-en="Transparent, affordable fees with no hidden costs. Contact us for the latest pricing and sibling discounts." data-zh="透明实惠的费用，无隐藏收费。联系我们了解最新价格和兄弟姐妹优惠。" data-ms="Yuran yang telus dan berpatutan tanpa kos tersembunyi. Hubungi kami untuk harga terkini dan diskaun adik-beradik.">透明实惠的费用，无隐藏收费。联系我们了解最新价格和兄弟姐妹优惠。</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-level" data-en="Primary" data-zh="小学" data-ms="Rendah">小学</div>
+          <div style="font-size:12px;color:var(--text-lt);margin-bottom:16px;" data-en="Ages 7–12" data-zh="7–12岁" data-ms="Umur 7–12">7–12岁</div>
+          <div class="price-features">
+            <div class="pf" data-en="Cambridge Primary curriculum" data-zh="剑桥小学课程" data-ms="Kurikulum Cambridge Primary">剑桥小学课程</div>
+            <div class="pf" data-en="English focus modules" data-zh="英语重点模块" data-ms="Modul fokus Bahasa Inggeris">英语重点模块</div>
+            <div class="pf" data-en="Arts & STEM activities" data-zh="艺术与STEM活动" data-ms="Aktiviti Seni & STEM">艺术与STEM活动</div>
+            <div class="pf" data-en="2x Parent-Teacher Conferences/yr" data-zh="每年2次家长会" data-ms="2x Persidangan/tahun">每年2次家长会</div>
+          </div>
+          <div style="margin-top:20px;"><div class="btn-primary" style="width:100%;justify-content:center;" onclick="goPage('admissions')" data-en="Enquire Now" data-zh="立即咨询" data-ms="Tanya Sekarang">立即咨询</div></div>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge" data-en="Most Popular" data-zh="最受欢迎" data-ms="Paling Popular">最受欢迎</div>
+          <div class="price-level" data-en="Secondary IGCSE" data-zh="中学IGCSE" data-ms="Menengah IGCSE">中学IGCSE</div>
+          <div style="font-size:12px;color:var(--text-lt);margin-bottom:16px;" data-en="Ages 13–18" data-zh="13–18岁" data-ms="Umur 13–18">13–18岁</div>
+          <div class="price-features">
+            <div class="pf" data-en="Cambridge IGCSE full programme" data-zh="剑桥IGCSE完整课程" data-ms="Program penuh Cambridge IGCSE">剑桥IGCSE完整课程</div>
+            <div class="pf" data-en="Subject specialist teachers" data-zh="学科专业教师" data-ms="Guru pakar subjek">学科专业教师</div>
+            <div class="pf" data-en="Mock exam preparation" data-zh="模拟考试备考" data-ms="Persediaan peperiksaan percubaan">模拟考试备考</div>
+            <div class="pf" data-en="University counselling" data-zh="大学升学辅导" data-ms="Kaunseling universiti">大学升学辅导</div>
+            <div class="pf" data-en="Co-curricular activities" data-zh="课外活动" data-ms="Aktiviti ko-kurikulum">课外活动</div>
+          </div>
+          <div style="margin-top:20px;"><div class="btn-primary" style="width:100%;justify-content:center;" onclick="goPage('admissions')" data-en="Enquire Now" data-zh="立即咨询" data-ms="Tanya Sekarang">立即咨询</div></div>
+        </div>
+        <div class="price-card">
+          <div class="price-level" data-en="English Booster" data-zh="英语强化班" data-ms="Penguat Bahasa Inggeris">英语强化班</div>
+          <div style="font-size:12px;color:var(--text-lt);margin-bottom:16px;" data-en="All Ages" data-zh="所有年龄" data-ms="Semua Umur">所有年龄</div>
+          <div class="price-features">
+            <div class="pf" data-en="Intensive English modules" data-zh="密集英语模块" data-ms="Modul Bahasa Inggeris intensif">密集英语模块</div>
+            <div class="pf" data-en="Reading, writing, speaking" data-zh="阅读、写作、口语" data-ms="Membaca, menulis, bertutur">阅读、写作、口语</div>
+            <div class="pf" data-en="Small groups — max 8 students" data-zh="小组班——最多8人" data-ms="Kumpulan kecil — max 8 pelajar">小组班——最多8人</div>
+            <div class="pf" data-en="Monthly assessments" data-zh="每月评估" data-ms="Penilaian bulanan">每月评估</div>
+          </div>
+          <div style="margin-top:20px;"><div class="btn-primary" style="width:100%;justify-content:center;" onclick="goPage('admissions')" data-en="Enquire Now" data-zh="立即咨询" data-ms="Tanya Sekarang">立即咨询</div></div>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--text-lt);font-size:14px;margin-top:24px;" data-en="* Sibling discounts available. Payment by semester or monthly. Contact us for detailed fee schedule." data-zh="* 兄弟姐妹折扣可用。可按学期或月度付款。联系我们获取详细收费表。" data-ms="* Diskaun adik-beradik tersedia. Pembayaran mengikut semester atau bulanan. Hubungi kami untuk jadual yuran terperinci.">* 兄弟姐妹折扣可用。可按学期或月度付款。联系我们获取详细收费表。</p>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: VISION ============ -->
+<div class="page" id="page-vision">
+  <section class="vision-hero">
+    <div class="container">
+      <div class="section-tag" style="background:rgba(245,197,24,0.15);color:var(--gold);" data-en="Our Vision & Values" data-zh="愿景与价值观" data-ms="Visi & Nilai Kami">愿景与价值观</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);color:var(--white);margin:20px 0;" data-en="Education That Transforms Lives" data-zh="改变生命的教育" data-ms="Pendidikan Yang Mengubah Kehidupan">改变生命的教育</h1>
+      <p style="color:rgba(255,255,255,0.7);font-size:18px;max-width:600px;margin:0 auto;" data-en="At Sunrise Education, we believe every child deserves a world-class education — one that celebrates their individuality and prepares them for a rapidly changing world." data-zh="在阳光学府，我们相信每个孩子都值得获得世界级的教育——一种颂扬其个性、为迅速变化的世界做好准备的教育。" data-ms="Di Sunrise Education, kami percaya setiap kanak-kanak layak mendapat pendidikan bertaraf dunia — yang meraikan keunikan mereka.">在阳光学府，我们相信每个孩子都值得获得世界级的教育——一种颂扬其个性、为迅速变化的世界做好准备的教育。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="Our Vision" data-zh="我们的愿景" data-ms="Visi Kami">我们的愿景</div>
+        <h2 class="section-title" data-en="What We Stand For" data-zh="我们的核心信念" data-ms="Apa Yang Kami Perjuangkan">我们的核心信念</h2>
+      </div>
+      <div class="vision-grid">
+        <div class="vision-card">
+          <div class="vision-num">01</div>
+          <h3 class="vision-title" data-en="Every Child is Gifted" data-zh="每个孩子都有天赋" data-ms="Setiap Kanak-kanak Berbakat">每个孩子都有天赋</h3>
+          <p class="card-text" data-en="We reject the idea that some children are simply not academic. Every child has unique brilliance — our job is to find it, nurture it and let it shine." data-zh="我们拒绝接受某些孩子天生不擅长学习的观念。每个孩子都有独特的才华——我们的职责是发现、培育并让它发光发亮。" data-ms="Kami menolak idea bahawa sesetengah kanak-kanak tidak akademik. Setiap anak mempunyai kecemerlangan unik — tugas kami adalah mencarinya.">我们拒绝接受某些孩子天生不擅长学习的观念。每个孩子都有独特的才华——我们的职责是发现、培育并让它发光发亮。</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">02</div>
+          <h3 class="vision-title" data-en="Joy is Essential in Learning" data-zh="快乐是学习的精髓" data-ms="Kegembiraan Penting dalam Pembelajaran">快乐是学习的精髓</h3>
+          <p class="card-text" data-en="Learning should never feel like a burden. We design lessons that are joyful, engaging and meaningful — because when children love learning, they excel." data-zh="学习永远不应该是负担。我们设计充满乐趣、引人入胜且有意义的课程——因为当孩子热爱学习时，他们自然会出类拔萃。" data-ms="Pembelajaran tidak seharusnya terasa seperti beban. Kami mereka bentuk pelajaran yang gembira, menarik dan bermakna.">学习永远不应该是负担。我们设计充满乐趣、引人入胜且有意义的课程——因为当孩子热爱学习时，他们自然会出类拔萃。</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">03</div>
+          <h3 class="vision-title" data-en="Families Are Our Partners" data-zh="家庭是我们的合作伙伴" data-ms="Keluarga Adalah Rakan Kongsi Kami">家庭是我们的合作伙伴</h3>
+          <p class="card-text" data-en="Education is most powerful when home and school align. We actively involve parents in their child's journey through regular communication and family events." data-zh="当家庭与学校目标一致时，教育最为强大。我们通过定期沟通和家庭活动，积极让家长参与孩子的成长旅程。" data-ms="Pendidikan paling berkuasa apabila rumah dan sekolah selaras. Kami melibatkan ibu bapa secara aktif dalam perjalanan anak mereka.">当家庭与学校目标一致时，教育最为强大。我们通过定期沟通和家庭活动，积极让家长参与孩子的成长旅程。</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">04</div>
+          <h3 class="vision-title" data-en="Global Citizens, Malaysian Hearts" data-zh="全球公民，马来西亚情怀" data-ms="Warganegara Global, Hati Malaysia">全球公民，马来西亚情怀</h3>
+          <p class="card-text" data-en="We raise students who are internationally competitive yet deeply rooted in Malaysian culture, values and identity." data-zh="我们培养具有国际竞争力、同时深深扎根于马来西亚文化、价值观和身份认同的学生。" data-ms="Kami mendidik pelajar yang berdaya saing di peringkat antarabangsa namun berakar umbi dalam budaya dan identiti Malaysia.">我们培养具有国际竞争力、同时深深扎根于马来西亚文化、价值观和身份认同的学生。</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">05</div>
+          <h3 class="vision-title" data-en="Continuous Improvement" data-zh="持续改进" data-ms="Penambahbaikan Berterusan">持续改进</h3>
+          <p class="card-text" data-en="We are lifelong learners ourselves. Our educators continuously upgrade their skills, embrace new teaching methods and integrate best global practices." data-zh="我们自身也是终身学习者。我们的教育者不断提升技能，接受新的教学方法，并融合全球最佳实践。" data-ms="Kami sendiri adalah pelajar seumur hidup. Pendidik kami sentiasa meningkatkan kemahiran dan merangkul kaedah pengajaran baharu.">我们自身也是终身学习者。我们的教育者不断提升技能，接受新的教学方法，并融合全球最佳实践。</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">06</div>
+          <h3 class="vision-title" data-en="Character Before Certificates" data-zh="品格重于证书" data-ms="Watak Sebelum Sijil">品格重于证书</h3>
+          <p class="card-text" data-en="Grades matter, but who your child becomes matters more. We build integrity, empathy, resilience and leadership into every aspect of our programme." data-zh="成绩固然重要，但孩子成为什么样的人更重要。我们在课程的每个方面都培养诚信、同理心、韧性和领导力。" data-ms="Gred penting, tetapi siapa anak anda lebih penting. Kami membina integriti, empati, ketahanan dan kepimpinan dalam setiap aspek program kami.">成绩固然重要，但孩子成为什么样的人更重要。我们在课程的每个方面都培养诚信、同理心、韧性和领导力。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission-strip">
+    <div class="container" style="text-align:center;">
+      <h2 style="color:var(--white);font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,40px);margin-bottom:20px;" data-en='"Our mission is not just to educate — it is to illuminate."' data-zh='"我们的使命不只是教育——更是点亮心灵。"' data-ms='"Misi kami bukan sekadar mendidik — ia adalah untuk menerangi."'>"我们的使命不只是教育——更是点亮心灵。"</h2>
+      <p style="color:rgba(255,255,255,0.6);font-size:14px;letter-spacing:2px;" data-en="— SUNRISE EDUCATION FOUNDING PRINCIPLE" data-zh="— 阳光学府创校理念" data-ms="— PRINSIP PENGASASAN SUNRISE EDUCATION">— 阳光学府创校理念</p>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: ABOUT US ============ -->
+<div class="page" id="page-about">
+  <section style="background:linear-gradient(135deg,#E8820C,#B85A00);padding:80px 24px 60px;text-align:center;">
+    <div class="container">
+      <div class="section-tag" style="background:rgba(255,255,255,0.15);color:var(--white);" data-en="About Us" data-zh="关于我们" data-ms="Tentang Kami">关于我们</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,50px);color:var(--white);margin:16px 0;" data-en="The Sunrise Story — A Decade of Changing Lives" data-zh="阳光故事——十年改变生命" data-ms="Kisah Sunrise — Satu Dekad Mengubah Kehidupan">阳光故事——十年改变生命</h1>
+      <p style="color:rgba(255,255,255,0.85);font-size:17px;max-width:580px;margin:0 auto;" data-en="Founded in 2014 with a single bold belief: every Malaysian child deserves a world-class, personalised education." data-zh="成立于2014年，秉持一个坚定信念：每位马来西亚孩子都值得拥有世界级的个性化教育。" data-ms="Ditubuhkan pada 2014 dengan satu kepercayaan teguh: setiap kanak-kanak Malaysia layak mendapat pendidikan bertaraf dunia yang diperibadikan.">成立于2014年，秉持一个坚定信念：每位马来西亚孩子都值得拥有世界级的个性化教育。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="curriculum-wrap">
+        <div>
+          <div class="section-tag" data-en="Our Story" data-zh="我们的故事" data-ms="Cerita Kami">我们的故事</div>
+          <h2 class="section-title" data-en="A Decade of Shaping Futures" data-zh="十年塑造未来" data-ms="Satu Dekad Membentuk Masa Depan">十年塑造未来</h2>
+          <p style="color:var(--text-md);font-size:16px;line-height:1.8;margin-bottom:20px;" data-en="Sunrise Education was established in 2014 in Klang, Selangor, with a simple but powerful vision: to provide Malaysian families with access to internationally recognised, high-quality education that respects each child's unique pace and potential." data-zh="阳光学府于2014年在雪兰莪巴生成立，怀揣简单却强大的愿景：为马来西亚家庭提供获得国际认可的高质量教育机会，尊重每个孩子独特的节奏和潜力。" data-ms="Sunrise Education ditubuhkan pada 2014 di Klang, Selangor, dengan visi yang mudah namun berkuasa: menyediakan akses kepada pendidikan berkualiti tinggi yang diiktiraf antarabangsa.">阳光学府于2014年在雪兰莪巴生成立，怀揣简单却强大的愿景：为马来西亚家庭提供获得国际认可的高质量教育机会，尊重每个孩子独特的节奏和潜力。</p>
+          <p style="color:var(--text-md);font-size:16px;line-height:1.8;margin-bottom:20px;" data-en="Over 10 years, we have grown from a small tutoring centre into a full homeschooling institution offering Cambridge IGCSE education. Our students have gone on to universities in Malaysia, the UK, Australia, Singapore and beyond." data-zh="十年来，我们从一个小型辅导中心成长为提供剑桥IGCSE教育的完整居家学习机构。我们的学生已进入马来西亚、英国、澳大利亚、新加坡及其他地方的大学。" data-ms="Lebih 10 tahun, kami telah berkembang dari pusat tuisyen kecil menjadi institusi homeschooling penuh yang menawarkan pendidikan Cambridge IGCSE.">十年来，我们从一个小型辅导中心成长为提供剑桥IGCSE教育的完整居家学习机构。我们的学生已进入马来西亚、英国、澳大利亚、新加坡及其他地方的大学。</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;">
+            <div style="text-align:center;padding:20px;background:var(--sun-pale);border-radius:var(--r);"><div style="font-family:'Playfair Display',serif;font-size:36px;color:var(--sun);font-weight:700;">2014</div><div style="font-size:13px;color:var(--text-md);" data-en="Founded" data-zh="成立年份" data-ms="Ditubuhkan">成立年份</div></div>
+            <div style="text-align:center;padding:20px;background:var(--navy-pale);border-radius:var(--r);"><div style="font-family:'Playfair Display',serif;font-size:36px;color:var(--navy);font-weight:700;">500+</div><div style="font-size:13px;color:var(--text-md);" data-en="Graduates" data-zh="毕业生" data-ms="Graduan">毕业生</div></div>
+            <div style="text-align:center;padding:20px;background:#EAF3DE;border-radius:var(--r);"><div style="font-family:'Playfair Display',serif;font-size:36px;color:var(--green);font-weight:700;">98%</div><div style="font-size:13px;color:var(--text-md);" data-en="Pass Rate" data-zh="通过率" data-ms="Kadar Lulus">通过率</div></div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:22px;color:var(--navy);margin-bottom:24px;" data-en="Our Dedicated Team" data-zh="我们的专业团队" data-ms="Pasukan Kami yang Berdedikasi">我们的专业团队</h3>
+          <div class="team-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="team-card">
+              <div class="team-avatar ta-sun">🌟</div>
+              <div class="team-name" data-en="Principal / Founder" data-zh="校长/创办人" data-ms="Pengetua / Pengasas">校长/创办人</div>
+              <div class="team-role" data-en="Education Expert, 20+ yrs" data-zh="教育专家，20+年经验" data-ms="Pakar Pendidikan, 20+ tahun">教育专家，20+年经验</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar ta-navy">🎓</div>
+              <div class="team-name" data-en="Head of Academics" data-zh="学术主任" data-ms="Ketua Akademik">学术主任</div>
+              <div class="team-role" data-en="Cambridge Certified" data-zh="剑桥认证教师" data-ms="Pensijilan Cambridge">剑桥认证教师</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar ta-gold">✏️</div>
+              <div class="team-name" data-en="English Lead" data-zh="英语科主任" data-ms="Ketua Bahasa Inggeris">英语科主任</div>
+              <div class="team-role" data-en="Native speaker, TEFL" data-zh="母语者，TEFL认证" data-ms="Penutur asli, TEFL">母语者，TEFL认证</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar ta-sun">🔬</div>
+              <div class="team-name" data-en="Science & Maths Head" data-zh="理科与数学主任" data-ms="Ketua Sains & Matematik">理科与数学主任</div>
+              <div class="team-role" data-en="MSc, 15 yrs experience" data-zh="理学硕士，15年经验" data-ms="MSc, 15 tahun pengalaman">理学硕士，15年经验</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag" data-en="Find Us" data-zh="找到我们" data-ms="Cari Kami">找到我们</div>
+        <h2 class="section-title" data-en="Visit Sunrise Education" data-zh="参观阳光学府" data-ms="Lawati Sunrise Education">参观阳光学府</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label" data-en="Address" data-zh="地址" data-ms="Alamat">地址</div>
+              <div class="contact-val">No. 25-2nd Floor, Jalan Mahogani 5/Ks7,<br>41200 Klang, Selangor, Malaysia</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-label" data-en="Phone / WhatsApp" data-zh="电话 / WhatsApp" data-ms="Telefon / WhatsApp">电话 / WhatsApp</div>
+              <div class="contact-val"><a href="tel:+60124251556">+6 012-425 1556</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-label" data-en="Email" data-zh="电子邮件" data-ms="E-mel">电子邮件</div>
+              <div class="contact-val"><a href="mailto:LOVE@sun.edu.my">LOVE@sun.edu.my</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <div class="contact-label" data-en="Website" data-zh="官方网站" data-ms="Laman Web">官方网站</div>
+              <div class="contact-val"><a href="https://www.sun.edu.my" target="_blank" style="color:var(--sun);">www.sun.edu.my</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">👥</div>
+            <div>
+              <div class="contact-label">Facebook</div>
+              <div class="contact-val"><a href="https://www.facebook.com/SunriseResourceCentre" target="_blank" style="color:var(--sun);">SunriseResourceCentre</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-label" data-en="Office Hours" data-zh="办公时间" data-ms="Waktu Pejabat">办公时间</div>
+              <div class="contact-val" data-en="Mon–Fri: 8:00 AM – 5:00 PM<br>Sat: 8:00 AM – 1:00 PM" data-zh="周一至周五：上午 8:00 – 下午 5:00<br>周六：上午 8:00 – 中午 1:00" data-ms="Isnin–Jumaat: 8:00 PG – 5:00 PTG<br>Sabtu: 8:00 PG – 1:00 TGH">周一至周五：上午 8:00 – 下午 5:00<br>周六：上午 8:00 – 中午 1:00</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="https://wa.me/60124251556" target="_blank" class="btn-primary">💬 WhatsApp</a>
+            <a href="https://maps.google.com/maps?ll=2.996279,101.445392&z=16&t=m&hl=en&gl=MY&mapclient=embed" target="_blank" class="btn-outline" style="border-color:var(--border-sun);color:var(--sun);">🗺️ <span data-en="Get Directions" data-zh="获取路线" data-ms="Dapatkan Arah">获取路线</span></a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://maps.google.com/maps?q=2.996279,101.445392&hl=en&z=16&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo" style="margin-right:0;margin-bottom:16px;">
+          <div class="nav-logo-icon">☀️</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-en" style="color:var(--white);">Sunrise Education</span>
+            <span class="nav-logo-zh">阳光学府 · Est. 2014</span>
+          </div>
+        </div>
+        <p class="footer-brand" data-en="Premier IGCSE homeschooling centre in Klang, Selangor. Cambridge-certified education for ages 7–18. Nurturing every child's unique potential since 2014." data-zh="雪兰莪巴生首屈一指的IGCSE居家学习中心。剑桥认证教育，适合7至18岁学生。自2014年以来，培育每个孩子的独特潜力。" data-ms="Pusat homeschooling IGCSE terkemuka di Klang, Selangor. Pendidikan bersijil Cambridge untuk umur 7–18. Memupuk potensi unik setiap kanak-kanak sejak 2014.">雪兰莪巴生首屈一指的IGCSE居家学习中心。剑桥认证教育，适合7至18岁学生。自2014年以来，培育每个孩子的独特潜力。</p>
+        <div class="social-links" style="margin-top:20px;">
+          <a href="https://www.facebook.com/SunriseResourceCentre" target="_blank" class="social-btn" title="Facebook">📘</a>
+          <a href="https://wa.me/60124251556" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+          <a href="mailto:LOVE@sun.edu.my" class="social-btn" title="Email">✉️</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-en="Quick Links" data-zh="快速链接" data-ms="Pautan Pantas">快速链接</h4>
+        <div class="footer-links">
+          <span onclick="goPage('home')" data-en="Home" data-zh="首页" data-ms="Utama">首页</span>
+          <span onclick="goPage('academic')" data-en="Academic" data-zh="学术课程" data-ms="Akademik">学术课程</span>
+          <span onclick="goPage('academic-primary')" data-en="Primary Programme" data-zh="小学课程" data-ms="Program Rendah">小学课程</span>
+          <span onclick="goPage('academic-secondary')" data-en="Secondary IGCSE" data-zh="中学IGCSE" data-ms="Menengah IGCSE">中学IGCSE</span>
+          <span onclick="goPage('admissions')" data-en="Admissions" data-zh="招生报名" data-ms="Kemasukan">招生报名</span>
+          <span onclick="goPage('vision')" data-en="Our Vision" data-zh="教育愿景" data-ms="Visi Kami">教育愿景</span>
+          <span onclick="goPage('about')" data-en="About Us" data-zh="关于我们" data-ms="Tentang Kami">关于我们</span>
+        </div>
+      </div>
+      <div>
+        <h4 data-en="Programmes" data-zh="课程项目" data-ms="Program">课程项目</h4>
+        <div class="footer-links">
+          <span data-en="Cambridge IGCSE" data-zh="剑桥IGCSE" data-ms="Cambridge IGCSE">剑桥IGCSE</span>
+          <span data-en="Primary Education" data-zh="小学教育" data-ms="Pendidikan Rendah">小学教育</span>
+          <span data-en="English Booster" data-zh="英语强化班" data-ms="Penguat Bahasa Inggeris">英语强化班</span>
+          <span data-en="Co-Curricular" data-zh="课外活动" data-ms="Ko-Kurikulum">课外活动</span>
+          <span data-en="University Pathway" data-zh="大学升学" data-ms="Laluan Universiti">大学升学</span>
+          <span data-en="Parent-Teacher Conf." data-zh="家长教师会议" data-ms="Persidangan IB-Guru">家长教师会议</span>
+        </div>
+      </div>
+      <div>
+        <h4 data-en="Contact" data-zh="联系方式" data-ms="Hubungi">联系方式</h4>
+        <div class="footer-links">
+          <a href="tel:+60124251556">📱 +6 012-425 1556</a>
+          <a href="mailto:LOVE@sun.edu.my">✉️ LOVE@sun.edu.my</a>
+          <a href="https://www.sun.edu.my" target="_blank">🌐 www.sun.edu.my</a>
+          <a href="https://wa.me/60124251556" target="_blank">💬 WhatsApp</a>
+          <span>📍 Klang, Selangor</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Sunrise Education (阳光学府). <span data-en="All rights reserved." data-zh="版权所有。" data-ms="Hak cipta terpelihara.">版权所有。</span></div>
+      <div style="display:flex;gap:16px;">
+        <span style="font-size:12px;color:rgba(255,255,255,0.3);cursor:pointer;" data-en="Privacy Policy" data-zh="隐私政策" data-ms="Dasar Privasi">隐私政策</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.3);cursor:pointer;" data-en="Terms of Use" data-zh="使用条款" data-ms="Terma Penggunaan">使用条款</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<div class="wa-float">
+  <div class="wa-tooltip" data-en="Chat on WhatsApp" data-zh="WhatsApp联系" data-ms="Chat di WhatsApp">WhatsApp联系</div>
+  <a href="https://wa.me/60124251556" target="_blank" class="wa-btn" title="WhatsApp">💬</a>
+</div>
+
+<!-- AI CHAT -->
+<div class="chat-toggle">
+  <div class="chat-icon-btn" onclick="toggleChat()" title="AI Assistant">🤖</div>
+</div>
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">
+    <div class="chat-avatar">☀️</div>
+    <div>
+      <div class="chat-title" data-en="Sunrise AI Advisor" data-zh="阳光AI顾问" data-ms="Penasihat AI Sunrise">阳光AI顾问</div>
+      <div class="chat-status" data-en="Ask me anything about Sunrise!" data-zh="有关阳光学府，尽管问我！" data-ms="Tanya saya apa sahaja tentang Sunrise!">有关阳光学府，尽管问我！</div>
+    </div>
+    <div class="chat-close" onclick="toggleChat()">✕</div>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="msg msg-bot" data-en="Hi! I'm the Sunrise AI Advisor. I can help you with information about our programmes, admissions, fees, and more. How can I help you today? 😊" data-zh="你好！我是阳光AI顾问。我可以帮您了解我们的课程、招生、费用等信息。今天有什么可以帮到您？😊" data-ms="Hai! Saya Penasihat AI Sunrise. Saya boleh membantu anda dengan maklumat tentang program, kemasukan, yuran kami dan lagi. Bagaimana saya boleh membantu anda hari ini? 😊">你好！我是阳光AI顾问。我可以帮您了解我们的课程、招生、费用等信息。今天有什么可以帮到您？😊</div>
+  </div>
+  <div class="chat-suggestions" id="chatSuggestions">
+    <div class="chat-sug" onclick="sendSuggestion(this)" data-en="What is IGCSE?" data-zh="什么是IGCSE？" data-ms="Apakah IGCSE?">什么是IGCSE？</div>
+    <div class="chat-sug" onclick="sendSuggestion(this)" data-en="How to enrol?" data-zh="如何报名？" data-ms="Cara mendaftar?">如何报名？</div>
+    <div class="chat-sug" onclick="sendSuggestion(this)" data-en="Age requirements?" data-zh="年龄要求？" data-ms="Keperluan umur?">年龄要求？</div>
+    <div class="chat-sug" onclick="sendSuggestion(this)" data-en="Is homeschooling legal?" data-zh="居家学习合法吗？" data-ms="Adakah homeschooling sah?">居家学习合法吗？</div>
+  </div>
+  <div class="chat-input-row">
+    <input class="chat-input" id="chatInput" placeholder="Type your question..." data-placeholder-en="Type your question..." data-placeholder-zh="请输入您的问题..." data-placeholder-ms="Taip soalan anda..." onkeypress="if(event.key==='Enter')sendChat()">
+    <div class="chat-send" onclick="sendChat()">→</div>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<script>
+// ===== STATE =====
+var currentLang = 'zh';
+var currentPage = 'home';
+var chatHistory = [];
+var chatOpen = false;
+
+// ===== LANGUAGE =====
+function setLang(lang) {
+  currentLang = lang;
+  document.body.className = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    if ((lang==='en' && b.textContent.trim()==='EN') ||
+        (lang==='zh' && (b.textContent.trim()==='中' || b.textContent.trim()==='中文')) ||
+        (lang==='ms' && b.textContent.trim()==='BM')) b.classList.add('active');
+  });
+  updateAllText();
+  updateChatLang();
+}
+
+function updateAllText() {
+  document.querySelectorAll('[data-'+currentLang+']').forEach(el => {
+    var val = el.getAttribute('data-'+currentLang);
+    if (val) el.innerHTML = val;
+  });
+  // placeholders
+  document.querySelectorAll('[data-placeholder-'+currentLang+']').forEach(el => {
+    el.placeholder = el.getAttribute('data-placeholder-'+currentLang);
+  });
+}
+
+function updateChatLang() {
+  var msgs = document.querySelectorAll('.msg-bot');
+  if(msgs.length>0) {
+    var first = msgs[0];
+    var val = first.getAttribute('data-'+currentLang);
+    if(val) first.innerHTML = val;
+  }
+}
+
+// ===== ROUTER =====
+function goPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+  document.querySelectorAll('.mobile-link').forEach(l => l.classList.remove('active'));
+  var el = document.getElementById('page-'+page);
+  if(el) {
+    el.classList.add('active');
+    window.scrollTo({top:0,behavior:'smooth'});
+    currentPage = page;
+  }
+  // highlight nav
+  var pageMap = {home:'home',academic:'academic','academic-primary':'academic','academic-secondary':'academic',admissions:'admissions',vision:'vision',about:'about'};
+  var navKey = pageMap[page] || page;
+  document.querySelectorAll('.nav-link').forEach(l => {
+    if(l.getAttribute('data-zh') && navKey) {
+      var navLabels = {home:'首页',academic:'学术',admissions:'招生',vision:'愿景',about:'关于我们'};
+      if(l.getAttribute('data-zh')===navLabels[navKey]) l.classList.add('active');
+    }
+  });
+}
+
+// ===== MOBILE MENU =====
+function toggleMenu() {
+  var m = document.getElementById('mobileMenu');
+  m.classList.toggle('open');
+}
+
+// ===== TABS =====
+function switchTab(tab) {
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.age-tab').forEach(t=>t.classList.remove('active'));
+  var panel = document.getElementById('tab-'+tab);
+  if(panel) panel.classList.add('active');
+  event.target.classList.add('active');
+}
+
+// ===== FAQ =====
+function toggleFaq(el) {
+  var item = el.closest('.faq-item');
+  var wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen) item.classList.add('open');
+}
+
+// ===== CHAT =====
+function toggleChat() {
+  chatOpen = !chatOpen;
+  var box = document.getElementById('chatBox');
+  if(chatOpen) box.classList.add('open');
+  else box.classList.remove('open');
+}
+
+function addMsg(text, type) {
+  var msgs = document.getElementById('chatMessages');
+  var div = document.createElement('div');
+  div.className = 'msg msg-'+type;
+  div.innerHTML = text;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+  return div;
+}
+
+function showTyping() {
+  var msgs = document.getElementById('chatMessages');
+  var div = document.createElement('div');
+  div.className = 'chat-typing';
+  div.id = 'typingIndicator';
+  div.textContent = currentLang==='zh' ? '正在输入...' : currentLang==='ms' ? 'Menaip...' : 'Typing...';
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function removeTyping() {
+  var t = document.getElementById('typingIndicator');
+  if(t) t.remove();
+}
+
+async function sendChat() {
+  var input = document.getElementById('chatInput');
+  var text = input.value.trim();
+  if(!text) return;
+  input.value='';
+  document.getElementById('chatSuggestions').style.display='none';
+  addMsg(text,'user');
+  chatHistory.push({role:'user',content:text});
+  showTyping();
+
+  var systemPrompt = `You are Sunrise AI Advisor for Sunrise Education (阳光学府), a premier IGCSE homeschooling centre in Klang, Selangor, Malaysia. 
+  Key facts: Founded 2014. Cambridge IGCSE curriculum. Ages 7-18. Primary (7-12) and Secondary (13-18) programmes. 
+  Contact: +6 012-425 1556, LOVE@sun.edu.my, www.sun.edu.my. 
+  Address: No. 25-2nd Floor, Jalan Mahogani 5/Ks7, 41200 Klang, Selangor.
+  Services: Personalised IGCSE education, Cambridge curriculum, recognised in 140+ countries, path to A-Level/Foundation/Diploma, English modules, co-curricular activities, bi-annual parent-teacher conferences, ability-based class grouping.
+  Current language: ${currentLang === 'zh' ? 'Mandarin Chinese (respond in Chinese)' : currentLang === 'ms' ? 'Bahasa Malaysia (respond in BM)' : 'English (respond in English)'}.
+  Be warm, helpful, and encouraging. Keep responses concise. Always end with a call to action if appropriate (contact us, visit us, etc.).`;
+
+  try {
+    var response = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:1000,
+        system:systemPrompt,
+        messages:chatHistory
+      })
+    });
+    var data = await response.json();
+    removeTyping();
+    var reply = data.content && data.content[0] ? data.content[0].text : (currentLang==='zh'?'抱歉，暂时无法回答。请直接联系我们！':'Sorry, unable to respond. Please contact us directly!');
+    addMsg(reply,'bot');
+    chatHistory.push({role:'assistant',content:reply});
+    if(chatHistory.length>20) chatHistory.splice(1,2);
+  } catch(e) {
+    removeTyping();
+    var errMsg = currentLang==='zh' ? '抱歉，连接暂时中断。请致电 +6 012-425 1556 或 WhatsApp 联系我们！😊' : currentLang==='ms' ? 'Maaf, sambungan terputus. Sila hubungi kami di +6 012-425 1556!' : 'Sorry, connection issue. Please contact us at +6 012-425 1556 or WhatsApp!';
+    addMsg(errMsg,'bot');
+  }
+}
+
+function sendSuggestion(el) {
+  var text = el.getAttribute('data-'+currentLang) || el.textContent;
+  document.getElementById('chatInput').value = text;
+  sendChat();
+}
+
+// ===== SCROLL =====
+window.addEventListener('scroll',function(){
+  var nav = document.getElementById('nav');
+  var st = document.getElementById('scrollTop');
+  if(window.scrollY>50) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+  if(window.scrollY>300) st.classList.add('show'); else st.classList.remove('show');
+});
+
+// ===== INIT =====
+setLang('zh');
+goPage('home');
+</script>
+</body>
+</html>
